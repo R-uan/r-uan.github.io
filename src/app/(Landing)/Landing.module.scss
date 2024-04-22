@@ -1,0 +1,66 @@
+.landing_page {
+	flex: 1;
+	gap: 15px;
+	display: flex;
+	padding: 5px;
+	position: relative;
+	justify-content: center;
+	height: calc(100vh - 90px);
+
+	.right_content_box {
+		display: flex;
+		width: fit-content;
+		align-items: center;
+
+		.home_img {
+			width: 400px;
+			height: 400px;
+			border-radius: 6px;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-image: url("/home/ballin.jpg");
+		}
+	}
+
+	.left_content_box {
+		height: 100%;
+		padding: 10px;
+		display: flex;
+		position: relative;
+		width: 60%;
+		align-items: center;
+
+		.introduction {
+			padding: 5px;
+			color: white;
+			width: fit-content;
+			height: fit-content;
+			flex-direction: column;
+			transform: translateY(-40%);
+		}
+
+		.personal_information {
+			left: 0;
+			bottom: 0;
+			margin: 10px;
+			position: absolute;
+			height: fit-content;
+
+			.code {
+				gap: 10px;
+				display: flex;
+				& > span {
+					font-size: 1.5rem;
+					line-height: 1.6rem;
+				}
+				.keyword {
+					color: #015d82;
+				}
+
+				.variable {
+					color: #00cc99;
+				}
+			}
+		}
+	}
+}
