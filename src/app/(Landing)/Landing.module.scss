@@ -1,9 +1,10 @@
 .landing_page {
 	flex: 1;
 	gap: 15px;
-	display: flex;
 	padding: 5px;
+	display: flex;
 	position: relative;
+	margin-bottom: 10px;
 	justify-content: center;
 	height: calc(100vh - 90px);
 
@@ -41,7 +42,7 @@
 
 		.personal_information {
 			left: 0;
-			bottom: 0;
+			bottom: 10%;
 			margin: 10px;
 			position: absolute;
 			height: fit-content;
