@@ -1,0 +1,85 @@
+.about {
+	gap: 50px;
+	width: 100%;
+	height: 100vh;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.about_me {
+	gap: 10px;
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+
+	& > span {
+		line-height: 1;
+		font-size: 2rem;
+		color: #ff003c;
+		font-weight: bold;
+	}
+
+	& > p {
+		color: white;
+		line-height: 1;
+		font-size: 1.45rem;
+		text-align: justify;
+	}
+}
+.languages {
+	gap: 10px;
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+
+	& > span {
+		line-height: 1;
+		font-size: 2rem;
+		color: #ff003c;
+		font-weight: bold;
+	}
+}
+
+.skills {
+	gap: 10px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(9, auto);
+}
+
+.tooltip {
+	height: 70px;
+	width: 100%;
+	text-align: center;
+
+	span {
+		color: white;
+		font-size: 1.45rem;
+		line-height: 1.45rem;
+	}
+}
+
+.skill {
+	gap: 5px;
+	width: 120px;
+	height: 120px;
+	display: flex;
+	border-radius: 6px;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #151c28;
+
+	.icon {
+		width: 40%;
+		height: 40%;
+	}
+
+	span {
+		font-size: 1.5rem;
+		line-height: 1.5rem;
+	}
+}
