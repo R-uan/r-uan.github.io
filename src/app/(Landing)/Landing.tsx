@@ -1,5 +1,4 @@
 import s from "./Landing.module.scss";
-import { LandingStyled } from "./LandingStyled";
 
 export default function Landing() {
 	function Age() {
