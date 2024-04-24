@@ -1,0 +1,134 @@
+.featured_repositories {
+	gap: 10px;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+
+	& > div:first-child {
+		width: 99%;
+		& > span {
+			color: white;
+			line-height: 1;
+			font-size: 2rem;
+		}
+	}
+
+	& > div:last-child {
+		gap: 30px;
+		width: 99%;
+		height: 90%;
+		padding: 5px;
+		display: flex;
+		position: relative;
+		flex-direction: column;
+	}
+
+	.featured {
+		width: 100%;
+		height: fit-content;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.other {
+		row-gap: 30px;
+		width: 100%;
+		display: grid;
+		height: fit-content;
+		grid-template-columns: repeat(3, auto);
+
+		.other_repository {
+			gap: 10px;
+			width: 477px;
+			display: flex;
+			min-height: 120px;
+			border-radius: 6px;
+			align-items: center;
+			height: fit-content;
+			flex-direction: column;
+			justify-content: center;
+			padding: 10px 17px 10px 17px;
+			padding: 10px 17px 10px 17px;
+			transition: outline ease-in-out 0.1s;
+			transition: background-color ease-in-out 0.1s;
+		}
+	}
+
+	.featured_repository {
+		gap: 10px;
+		width: 477px;
+		height: 195px;
+		display: flex;
+		border-radius: 6px;
+		align-items: center;
+		flex-direction: row;
+		padding: 10px 17px 10px 17px;
+		transition: outline ease-in-out 0.1s;
+		transition: background-color ease-in-out 0.1s;
+
+		.screenshot {
+			width: 40%;
+			height: 120px;
+			border-radius: 3px;
+			transform: translateY(-10%);
+			outline: 1px solid #151c28;
+			transition: outline ease-in-out 0.1s;
+		}
+
+		.details {
+			gap: 10px;
+			width: 60%;
+			display: flex;
+			height: fit-content;
+			flex-direction: column;
+		}
+	}
+
+	.title {
+		line-height: 1;
+		color: #ff003c;
+		font-weight: bold;
+		font-size: 1.75rem;
+	}
+
+	.description {
+		color: white;
+		line-height: 1;
+		font-size: 1.25rem;
+	}
+
+	.tags {
+		gap: 5px;
+		width: 100%;
+		display: flex;
+	}
+
+	.tag {
+		line-height: 1;
+		color: #00f0ff;
+		font-size: 1.1rem;
+		text-align: center;
+		width: fit-content;
+		border-radius: 3px;
+		padding: 3px 6px 3px 6px;
+		border: 1px solid #00f0ff;
+	}
+
+	.featured_repository:hover,
+	.other_repository:hover {
+		cursor: pointer;
+		background-color: #161c27;
+		outline: 1px solid #31415e;
+		transition: outline ease-in-out 0.1s;
+		transition: background-color ease-in-out 0.1s;
+
+		.screenshot {
+			outline: 1px solid #31415e;
+			transition: outline ease-in-out 0.1s;
+		}
+	}
+}
