@@ -23,6 +23,7 @@ export default function About() {
 					{PrimarySkills.map((skill) => {
 						return (
 							<div
+								key={skill.name}
 								className={s.skill}
 								onMouseEnter={() => setToolTip(skill.description)}
 								onMouseLeave={() => setToolTip(null)}>
