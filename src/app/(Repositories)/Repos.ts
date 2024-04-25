@@ -34,14 +34,14 @@ export const Other_Repositories: { name: string; description: string; tags: stri
 		tags: ["Java", "Spring Framework", "JWT", "Spring Security", "Postgres"],
 		description:
 			"API with endpoints for use authentication system using Spring Security, JSON web tokens and PostgreSQL as database.",
-		link: "",
+		link: "https://github.com/R-uan/user-authentication-system",
 	},
 	{
-		name: "User Athentication System",
-		tags: ["Java", "Spring Framework", "JWT", "Spring Security", "Postgres"],
+		name: "Raw Audio Playlist",
+		tags: ["NextJS", "Tailwind", "ReactJS", "Redux"],
 		description:
-			"API with endpoints for use authentication system using Spring Security, JSON web tokens and PostgreSQL as database.",
-		link: "",
+			"Web application that for creating playlists with raw audio links. Mostly serves as an extension for the soundgasm and kemono website. Backend has form to extract the raw audio url from soundgasm.",
+		link: "https://github.com/R-uan/soundgasm-playlist",
 	},
 	{
 		name: "User Athentication System",
