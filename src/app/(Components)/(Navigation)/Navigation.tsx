@@ -1,5 +1,7 @@
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { NavigationStyled } from "./NavigationStyled";
+import { socials } from "@/app/Socials";
+import { LiaLinkedin } from "react-icons/lia";
 
 export default function Navigation() {
 	return (
@@ -16,9 +18,12 @@ export default function Navigation() {
 				</ul>
 			</div>
 			<div>
-				<div className="github">
+				<a href={socials.github} target="_blank" className="icon">
 					<FaGithub />
-				</div>
+				</a>
+				<a href={socials.linkedin} target="_blank" className="icon">
+					<FaLinkedin />
+				</a>
 			</div>
 		</NavigationStyled>
 	);

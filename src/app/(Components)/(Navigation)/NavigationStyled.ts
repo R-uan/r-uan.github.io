@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const NavigationStyled = styled.nav`
+	z-index: 101;
 	width: 100%;
 	height: 60px;
 	display: flex;
@@ -40,16 +41,22 @@ export const NavigationStyled = styled.nav`
 	}
 
 	& > div:nth-child(3) {
+		gap: 15px;
 		width: 30%;
 		display: flex;
 		padding-right: 15px;
 		justify-content: flex-end;
 
-		.github {
+		& > a {
+			width: fit-content;
+			width: fit-content;
+		}
+
+		.icon {
 			gap: 5px;
 			color: white;
 			display: flex;
-			font-size: 1.5rem;
+			font-size: 1.75rem;
 			align-items: center;
 		}
 	}
