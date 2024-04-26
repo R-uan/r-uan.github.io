@@ -23,7 +23,7 @@ const JetBrains = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-	title: "Ruan",
+	title: "Ruan Lopes | Web Developer",
 	description: "Personal webpage/portifolio",
 };
 
