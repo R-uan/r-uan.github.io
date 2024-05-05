@@ -1,7 +1,7 @@
 export const Featured_Repositories: { name: string; description: string; tags: string[]; image: string }[] = [
 	{
 		name: "Ecommerce Backend",
-		image: "",
+		image: "/screenshots/personal-website.jpg",
 		description:
 			"Backend for a ecommerce using Laravel. JWT Authorization, Postgres database, protected endpoints, redis for request caching, database indexation.",
 		tags: ["PHP", "Laravel", "Postgres", "JWT", "Redis"],
