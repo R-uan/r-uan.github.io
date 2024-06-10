@@ -1,10 +1,9 @@
 export const Featured_Repositories: { name: string; description: string; tags: string[]; image: string }[] = [
 	{
-		name: "Ecommerce Backend",
-		image: "/screenshots/personal-website.jpg",
-		description:
-			"Backend for a ecommerce using Laravel. JWT Authorization, Postgres database, protected endpoints, redis for request caching, database indexation.",
-		tags: ["PHP", "Laravel", "Postgres", "JWT", "Redis"],
+		name: "Basic Authentication API",
+		image: "/screenshots/dotnet.png",
+		description: "Basic User Authentication Project using JSON Web Tokens and PostgreSQL in C# using ASP.NET Core",
+		tags: ["C#", "ASP.NET Core", "Postgres", "JWT", "Entity Framework"],
 	},
 	{
 		name: "Personal Website",
@@ -32,8 +31,7 @@ export const Other_Repositories: { name: string; description: string; tags: stri
 	{
 		name: "User Athentication System",
 		tags: ["Java", "Spring Framework", "JWT", "Spring Security", "Postgres"],
-		description:
-			"API with endpoints for use authentication system using Spring Security, JSON web tokens and PostgreSQL as database.",
+		description: "API with endpoints for use authentication system using Spring Security, JSON web tokens and PostgreSQL as database.",
 		link: "https://github.com/R-uan/user-authentication-system",
 	},
 	{
@@ -46,43 +44,37 @@ export const Other_Repositories: { name: string; description: string; tags: stri
 	{
 		name: "User Athentication System",
 		tags: ["Java", "Spring Framework", "JWT", "Spring Security", "Postgres"],
-		description:
-			"API with endpoints for use authentication system using Spring Security, JSON web tokens and PostgreSQL as database.",
+		description: "API with endpoints for use authentication system using Spring Security, JSON web tokens and PostgreSQL as database.",
 		link: "",
 	},
 	{
 		name: "User Athentication System",
 		tags: ["Java", "Spring Framework", "JWT", "Spring Security", "Postgres"],
-		description:
-			"API with endpoints for use authentication system using Spring Security, JSON web tokens and PostgreSQL as database.",
+		description: "API with endpoints for use authentication system using Spring Security, JSON web tokens and PostgreSQL as database.",
 		link: "",
 	},
 	{
 		name: "User Athentication System",
 		tags: ["Java", "Spring Framework", "JWT", "Spring Security", "Postgres"],
-		description:
-			"API with endpoints for use authentication system using Spring Security, JSON web tokens and PostgreSQL as database.",
+		description: "API with endpoints for use authentication system using Spring Security, JSON web tokens and PostgreSQL as database.",
 		link: "",
 	},
 	{
 		name: "User Athentication System",
 		tags: ["Java", "Spring Framework", "JWT", "Spring Security", "Postgres"],
-		description:
-			"API with endpoints for use authentication system using Spring Security, JSON web tokens and PostgreSQL as database.",
+		description: "API with endpoints for use authentication system using Spring Security, JSON web tokens and PostgreSQL as database.",
 		link: "",
 	},
 	{
 		name: "User Athentication System",
 		tags: ["Java", "Spring Framework", "JWT", "Spring Security", "Postgres"],
-		description:
-			"API with endpoints for use authentication system using Spring Security, JSON web tokens and PostgreSQL as database.",
+		description: "API with endpoints for use authentication system using Spring Security, JSON web tokens and PostgreSQL as database.",
 		link: "",
 	},
 	{
 		name: "User Athentication System",
 		tags: ["Java", "Spring Framework", "JWT", "Spring Security", "Postgres"],
-		description:
-			"API with endpoints for use authentication system using Spring Security, JSON web tokens and PostgreSQL as database.",
+		description: "API with endpoints for use authentication system using Spring Security, JSON web tokens and PostgreSQL as database.",
 		link: "",
 	},
 ];

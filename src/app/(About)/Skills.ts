@@ -20,8 +20,7 @@ export const PrimarySkills: { name: string; icon: string; description: string }[
 	{
 		name: "CSharp",
 		icon: "/skills-icon/csharp.svg",
-		description:
-			"CSharp is my choice of language to create desktop applications. I like it's syntax and the PascalCase.",
+		description: "CSharp is my choice of language to create desktop applications. I like it's syntax and the PascalCase.",
 	},
 	{
 		name: "NodeJS",
@@ -31,14 +30,12 @@ export const PrimarySkills: { name: string; icon: string; description: string }[
 	{
 		name: "React",
 		icon: "/skills-icon/react.svg",
-		description:
-			"ReactJS is a frontend library for JavaScript used to create responsive user interfaces for web applications.",
+		description: "ReactJS is a frontend library for JavaScript used to create responsive user interfaces for web applications.",
 	},
 	{
 		name: "Redux",
 		icon: "/skills-icon/redux.svg",
-		description:
-			"Redux is a React state manager. I personally prefer to use React contexts but redux might have it's worth.",
+		description: "Redux is a React state manager. I personally prefer to use React contexts but redux might have it's worth.",
 	},
 	{
 		name: "NextJS",
@@ -49,8 +46,7 @@ export const PrimarySkills: { name: string; icon: string; description: string }[
 	{
 		name: "Express",
 		icon: "/skills-icon/express.svg",
-		description:
-			"Express is a JavaScript framework used for the creation of backend APIs. It's a simple but complete tool.",
+		description: "Express is a JavaScript framework used for the creation of backend APIs. It's a simple but complete tool.",
 	},
 	{
 		name: "Jest",
@@ -58,16 +54,15 @@ export const PrimarySkills: { name: string; icon: string; description: string }[
 		description: "Jest is a JavaScript library for unit test.",
 	},
 	{
-		name: "Java",
-		icon: "/skills-icon/java.svg",
-		description:
-			"No need for introductions. Wheter I like it or not (spoiler: I don't), it's still one of the most used languages for the creation of many types of applications, including web applications.",
+		name: "Asp.Net Core",
+		icon: "/skills-icon/dotnet.svg",
+		description: "Powerful framework for web development allowing to create MVC applications or Web APIs in general.",
 	},
 	{
-		name: "Spring",
-		icon: "/skills-icon/spring.svg",
+		name: "Tailwind CSS",
+		icon: "/skills-icon/tailwind.svg",
 		description:
-			"Spring Framework is the main framework for Java web development. Feels overly complicated for no reason. Personaly think Laravel is better.",
+			"Tailwind CSS is a utility-first framework for creating custom designs with predefined classes in HTML. It enables rapid prototyping and responsive design.",
 	},
 
 	{
@@ -83,8 +78,7 @@ export const PrimarySkills: { name: string; icon: string; description: string }[
 	{
 		name: "Redis",
 		icon: "/skills-icon/redis.svg",
-		description:
-			"Redis is a NoSQL database that is often used as a cache database for the backend server of a web application.",
+		description: "Redis is a NoSQL database that is often used as a cache database for the backend server of a web application.",
 	},
 	{
 		name: "Docker",

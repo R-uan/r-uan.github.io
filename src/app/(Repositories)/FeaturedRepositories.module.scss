@@ -1,20 +1,12 @@
-.featured_repositories {
+.root {
 	gap: 10px;
 	width: 100%;
-	height: 100vh;
 	display: flex;
+	min-height: 100vh;
 	align-items: center;
 	flex-direction: column;
 	justify-content: center;
-
-	& > div:first-child {
-		width: 99%;
-		& > span {
-			color: white;
-			line-height: 1;
-			font-size: 2rem;
-		}
-	}
+	outline: 2px solid blue;
 
 	& > div:last-child {
 		gap: 30px;
@@ -28,66 +20,59 @@
 		justify-content: center;
 	}
 
+	& > div:first-child {
+		padding: 5px;
+		height: fit-content;
+		outline: 2px solid yellow;
+	}
+
 	.featured {
+		outline: 2px solid red;
 		width: 100%;
 		height: fit-content;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
-	}
-
-	.other {
-		row-gap: 30px;
-		width: 100%;
-		display: grid;
-		height: fit-content;
-		justify-content: space-between;
-		grid-template-columns: repeat(3, auto);
-
-		.other_repository {
-			gap: 10px;
-			width: 477px;
-			display: flex;
-			min-height: 120px;
-			border-radius: 6px;
-			align-items: center;
-			height: fit-content;
-			flex-direction: column;
-			justify-content: center;
-			padding: 10px 17px 10px 17px;
-			transition: outline ease-in-out 0.1s;
-			transition: background-color ease-in-out 0.1s;
-		}
 	}
 
 	.featured_repository {
-		gap: 10px;
+		gap: 15px;
 		width: 477px;
-		height: 195px;
+		height: 250px;
 		display: flex;
 		border-radius: 6px;
 		align-items: center;
-		flex-direction: row;
-		padding: 10px 17px 10px 17px;
+		flex-direction: column;
+		justify-content: center;
+		padding: 20px 17px 20px 17px;
 		transition: outline ease-in-out 0.1s;
 		transition: background-color ease-in-out 0.1s;
+	}
 
-		.screenshot {
-			width: 160px;
-			height: 100px;
+	.image {
+		width: 170px;
+		aspect-ratio: 3/2;
+		border-radius: 3px;
+		position: relative;
+		background-color: white;
+		outline: 1px solid #151c28;
+		transition: outline ease-in-out 0.1s;
+
+		.imagem {
 			border-radius: 3px;
-			transform: translateY(-20%);
-			outline: 1px solid #151c28;
-			transition: outline ease-in-out 0.1s;
 		}
+	}
 
-		.details {
-			gap: 10px;
-			width: 60%;
-			display: flex;
-			height: fit-content;
-			flex-direction: column;
-		}
+	.top {
+		gap: 10px;
+		width: 100%;
+		display: flex;
+		position: relative;
+		height: fit-content;
+	}
+
+	.xdd {
+		flex: 1 1 0%;
 	}
 
 	.title {
@@ -107,6 +92,7 @@
 		gap: 5px;
 		width: 100%;
 		display: flex;
+		justify-content: center;
 	}
 
 	.tag {
@@ -132,5 +118,29 @@
 			outline: 1px solid #31415e;
 			transition: outline ease-in-out 0.1s;
 		}
+	}
+}
+
+.other {
+	row-gap: 30px;
+	width: 100%;
+	display: grid;
+	height: fit-content;
+	justify-content: space-between;
+	grid-template-columns: repeat(3, auto);
+
+	.other_repository {
+		gap: 10px;
+		width: 477px;
+		display: flex;
+		min-height: 120px;
+		border-radius: 6px;
+		align-items: center;
+		height: fit-content;
+		flex-direction: column;
+		justify-content: center;
+		padding: 10px 17px 10px 17px;
+		transition: outline ease-in-out 0.1s;
+		transition: background-color ease-in-out 0.1s;
 	}
 }
