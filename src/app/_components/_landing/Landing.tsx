@@ -1,3 +1,4 @@
+import Image from "next/image";
 import s from "./Landing.module.scss";
 
 export default function Landing() {
@@ -75,7 +76,9 @@ export default function Landing() {
 				</div>
 			</div>
 			<div className={s.right_content_box}>
-				<div className={s.home_img} />
+				<div className={s.home_img}>
+					<Image className="rounded-[6px]" width={400} height={400} alt="landing image" src={"/home/ballin.webp"} />
+				</div>
 			</div>
 		</section>
 	);

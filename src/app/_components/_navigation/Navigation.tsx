@@ -1,4 +1,4 @@
-import { socials } from "@/app/Socials";
+import { socials } from "@/app/_scripts/Socials";
 import s from "./Navigation.module.scss";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 

@@ -25,6 +25,9 @@ const JetBrains = JetBrains_Mono({
 export const metadata: Metadata = {
 	title: "Ruan Lopes | Web Developer",
 	description: "Personal webpage/portifolio",
+	icons: {
+		icon: "/favicon.png",
+	},
 };
 
 export default function RootLayout({

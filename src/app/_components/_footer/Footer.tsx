@@ -1,4 +1,4 @@
-import { socials } from "@/app/Socials";
+import { socials } from "@/app/_scripts/Socials";
 import s from "./Footer.module.scss";
 
 export default function Footer() {

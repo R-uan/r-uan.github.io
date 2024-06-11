@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import s from "./About.module.scss";
-import { PrimarySkills } from "./Skills";
+import { PrimarySkills } from "../../_scripts/Skills";
 import { useState } from "react";
 
 export default function About() {

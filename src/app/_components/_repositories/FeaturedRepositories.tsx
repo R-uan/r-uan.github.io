@@ -1,6 +1,6 @@
 import Image from "next/image";
 import s from "./FeaturedRepositories.module.scss";
-import { Featured_Repositories, Other_Repositories } from "./Repos";
+import { Featured_Repositories, Other_Repositories } from "../../_scripts/Repositories";
 
 export default function FeaturedRepos() {
 	return (

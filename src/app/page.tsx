@@ -1,9 +1,9 @@
 "use client";
-import About from "./(About)/About";
-import Main from "./(Landing)/Landing";
-import Footer from "./(Components)/(Footer)/Footer";
-import Navigation from "./(Components)/(Navigation)/Navigation";
-import FeaturedRepos from "./(Repositories)/FeaturedRepositories";
+import About from "./_components/_about/About";
+import Main from "./_components/_landing/Landing";
+import Footer from "./_components/_footer/Footer";
+import Navigation from "./_components/_navigation/Navigation";
+import FeaturedRepos from "./_components/_repositories/FeaturedRepositories";
 
 export default function Home() {
 	return (

@@ -15,11 +15,12 @@
 
 		.home_img {
 			width: 400px;
-			height: 400px;
+			aspect-ratio: 1/1;
 			border-radius: 6px;
-			background-size: cover;
-			background-repeat: no-repeat;
-			background-image: url("/home/ballin.jpg");
+			position: relative;
+			object-fit: contain;
+			outline-offset: 5px;
+			outline: 1px solid #00f0ff;
 		}
 	}
 
