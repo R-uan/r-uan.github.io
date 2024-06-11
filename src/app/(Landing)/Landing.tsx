@@ -21,9 +21,6 @@ export default function Landing() {
 					<div>
 						<span className="text-[4rem] leading-[1]">I am a Aspiring Fullstack Web Developer</span>
 					</div>
-					<div>
-						<p></p>
-					</div>
 				</div>
 				<div className={s.personal_information}>
 					<div>

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const NavigationStyled = styled.nav`
+	outline: 2px solid red;
 	z-index: 101;
 	width: 100%;
 	height: 60px;

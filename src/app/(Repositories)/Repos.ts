@@ -1,19 +1,22 @@
-export const Featured_Repositories: { name: string; description: string; tags: string[]; image: string }[] = [
+export const Featured_Repositories: { name: string; description: string; url: string; tags: string[]; image: string }[] = [
 	{
 		name: "Basic Authentication API",
+		url: "",
 		image: "/screenshots/dotnet.png",
 		description: "Basic User Authentication Project using JSON Web Tokens and PostgreSQL in C# using ASP.NET Core",
 		tags: ["C#", "ASP.NET Core", "Postgres", "JWT", "Entity Framework"],
 	},
 	{
-		name: "Personal Website",
-		image: "",
+		name: "Art Gallery",
+		url: "",
+		image: "/screenshots/artgallery.png",
 		description:
 			"Backend for a ecommerce using Laravel. JWT Authorization, Postgres database, protected endpoints, redis for request caching, database indexation.",
 		tags: ["PHP", "Laravel", "Postgres", "JWT", "Redis"],
 	},
 	{
 		name: "Personal Website",
+		url: "",
 		image: "",
 		description:
 			"Backend for a ecommerce using Laravel. JWT Authorization, Postgres database, protected endpoints, redis for request caching, database indexation.",

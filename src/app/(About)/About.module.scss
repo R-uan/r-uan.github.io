@@ -85,7 +85,32 @@
 	}
 }
 
-@media (max-width: 770px) {
+@media (max-width: 1376px) {
+	.skills {
+		justify-content: center;
+		grid-template-columns: repeat(7, auto);
+	}
+}
+
+@media (max-width: 1200px) {
+	.skills {
+		justify-content: center;
+		grid-template-columns: repeat(6, auto);
+	}
+}
+
+@media (max-width: 870px) {
+	.skills {
+		justify-content: center;
+		grid-template-columns: repeat(5, auto);
+	}
+}
+
+@media (max-width: 820px) {
+	.about_me {
+		align-items: center;
+	}
+
 	.languages {
 		& > span {
 			text-align: center;
@@ -95,8 +120,35 @@
 	.tooltip {
 		visibility: hidden;
 	}
+
 	.skills {
 		justify-content: center;
 		grid-template-columns: repeat(3, auto);
+	}
+}
+
+@media (max-width: 500px) {
+	.about_me {
+		align-items: center;
+	}
+
+	.languages {
+		& > span {
+			text-align: center;
+		}
+	}
+
+	.tooltip {
+		visibility: hidden;
+	}
+
+	.skill {
+		width: 90px;
+		height: 90px;
+
+		span {
+			font-size: 1.3rem;
+			line-height: 1;
+		}
 	}
 }

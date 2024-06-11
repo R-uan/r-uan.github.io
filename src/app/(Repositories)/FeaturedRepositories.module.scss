@@ -6,7 +6,6 @@
 	align-items: center;
 	flex-direction: column;
 	justify-content: center;
-	outline: 2px solid blue;
 
 	& > div:last-child {
 		gap: 30px;
@@ -21,23 +20,26 @@
 	}
 
 	& > div:first-child {
-		padding: 5px;
+		padding: 5px 5px 5px 25px;
 		height: fit-content;
-		outline: 2px solid yellow;
+		span {
+			line-height: 1;
+			font-size: 2.5rem;
+			color: #ff003c;
+		}
 	}
 
 	.featured {
-		outline: 2px solid red;
 		width: 100%;
-		height: fit-content;
 		display: flex;
+		height: fit-content;
 		flex-direction: row;
 		justify-content: space-between;
 	}
 
 	.featured_repository {
 		gap: 15px;
-		width: 477px;
+		width: 33%;
 		height: 250px;
 		display: flex;
 		border-radius: 6px;
@@ -50,7 +52,7 @@
 	}
 
 	.image {
-		width: 170px;
+		width: 40%;
 		aspect-ratio: 3/2;
 		border-radius: 3px;
 		position: relative;
@@ -92,7 +94,7 @@
 		gap: 5px;
 		width: 100%;
 		display: flex;
-		justify-content: center;
+		justify-content: flex-start;
 	}
 
 	.tag {
@@ -127,20 +129,49 @@
 	display: grid;
 	height: fit-content;
 	justify-content: space-between;
-	grid-template-columns: repeat(3, auto);
+	grid-template-columns: repeat(3, 33%);
 
 	.other_repository {
 		gap: 10px;
-		width: 477px;
+		width: 100%;
 		display: flex;
 		min-height: 120px;
 		border-radius: 6px;
-		align-items: center;
+		align-items: flex-start;
 		height: fit-content;
 		flex-direction: column;
 		justify-content: center;
 		padding: 10px 17px 10px 17px;
 		transition: outline ease-in-out 0.1s;
 		transition: background-color ease-in-out 0.1s;
+	}
+}
+
+@media (max-width: 1050px) {
+	.root {
+		& > div:first-child {
+			text-align: center;
+		}
+		.other {
+			grid-template-columns: 100%;
+			.tags {
+				justify-content: flex-start;
+			}
+		}
+		.featured_repository {
+			width: 80%;
+		}
+		.featured {
+			align-items: center;
+			flex-direction: column;
+		}
+	}
+}
+
+@media (max-width: 760px) {
+	.root {
+		.featured_repository {
+			width: 100%;
+		}
 	}
 }

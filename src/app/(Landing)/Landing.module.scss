@@ -24,11 +24,11 @@
 	}
 
 	.left_content_box {
+		width: 60%;
 		height: 100%;
 		padding: 10px;
 		display: flex;
 		position: relative;
-		width: 60%;
 		align-items: center;
 
 		.introduction {
@@ -62,6 +62,35 @@
 					color: #00cc99;
 				}
 			}
+		}
+	}
+}
+
+@media (max-width: 840px) {
+	.landing_page {
+		.left_content_box {
+			.personal_information {
+				.code {
+					& > span {
+						font-size: clamp(4vw, 4vw, 1.3rem);
+						line-height: 1;
+					}
+					.keyword {
+						color: #015d82;
+					}
+
+					.variable {
+						color: #00cc99;
+					}
+				}
+			}
+		}
+		.left_content_box {
+			height: 100%;
+			width: 100%;
+		}
+		.right_content_box {
+			display: none;
 		}
 	}
 }
