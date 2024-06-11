@@ -36,7 +36,7 @@ export default function Landing() {
 							<span className={s.keyword}>string</span>
 							<span className={s.variable}>nationality</span>
 							<span className="text-white">=</span>
-							<span className="text-[#B5806C]">"brazillian";</span>
+							<span className="text-[#B5806C]">&quot;brazillian&quot;;</span>
 						</div>
 					</div>
 					<div>
@@ -44,7 +44,7 @@ export default function Landing() {
 							<span className={s.keyword}>string</span>
 							<span className={s.variable}>email</span>
 							<span className="text-white">=</span>
-							<span className="text-[#B5806C]">"rpo.lopes.dev@gmail.com";</span>
+							<span className="text-[#B5806C]">&quot;rpo.lopes.dev@gmail.com&quot;{";"}</span>
 						</div>
 					</div>
 					<div>
@@ -54,7 +54,7 @@ export default function Landing() {
 							<span className="text-white">=</span>
 							<span className="text-[#B5806C]">
 								<a target="_blank" href="https://github.com/R-uan">
-									"https://github.com/R-uan"
+									&quot;https://github.com/R-uan&quot;
 								</a>
 								;
 							</span>
@@ -66,9 +66,9 @@ export default function Landing() {
 							<span className={s.variable}>languages</span>
 							<span className="text-white">=</span>
 							<span className="text-white">{"{"}</span>
-							<span className="text-[#B5806C]">"portuguese"</span>
+							<span className="text-[#B5806C]">&quot;portuguese&quot;</span>
 							<span className="text-white">{", "}</span>
-							<span className="text-[#B5806C]">"english"</span>
+							<span className="text-[#B5806C]">&quot;english&quot;</span>
 							<span className="text-white">{"}"}</span>
 						</div>
 					</div>

@@ -1,30 +1,21 @@
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { NavigationStyled } from "./NavigationStyled";
 import { socials } from "@/app/Socials";
-import { LiaLinkedin } from "react-icons/lia";
+import s from "./Navigation.module.scss";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Navigation() {
 	return (
-		<NavigationStyled>
+		<nav className={s.navigation}>
 			<div>
 				<span>$ruan_lopes</span>
 			</div>
 			<div>
-				<ul>
-					<li>// home</li>
-					<li>// repositories</li>
-					<li>// about me</li>
-					<li>// contact</li>
-				</ul>
-			</div>
-			<div>
-				<a href={socials.github} target="_blank" className="icon">
+				<a href={socials.github} aria-label="github" target="_blank" className={s.icon}>
 					<FaGithub />
 				</a>
-				<a href={socials.linkedin} target="_blank" className="icon">
+				<a href={socials.linkedin} aria-label="linkedin" target="_blank" className={s.icon}>
 					<FaLinkedin />
 				</a>
 			</div>
-		</NavigationStyled>
+		</nav>
 	);
 }

@@ -55,7 +55,7 @@
 					line-height: 1.6rem;
 				}
 				.keyword {
-					color: #015d82;
+					color: #02aef2;
 				}
 
 				.variable {
@@ -66,13 +66,14 @@
 	}
 }
 
-@media (max-width: 840px) {
+@media (max-width: 880px) {
 	.landing_page {
+		min-height: 780px;
 		.left_content_box {
 			.personal_information {
 				.code {
 					& > span {
-						font-size: clamp(4vw, 4vw, 1.3rem);
+						font-size: clamp(4.8vw, 4.8vw, 1.3rem);
 						line-height: 1;
 					}
 					.keyword {

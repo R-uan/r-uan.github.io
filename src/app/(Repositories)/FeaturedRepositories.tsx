@@ -10,9 +10,9 @@ export default function FeaturedRepos() {
 			</div>
 			<div>
 				<div className={s.featured}>
-					{Featured_Repositories.map((repo) => {
+					{Featured_Repositories.map((repo, index) => {
 						return (
-							<a key={repo.name} target="_blank" href={repo.url} className={s.featured_repository}>
+							<a key={repo.name + index} target="_blank" href={repo.url} className={s.featured_repository}>
 								<div className={s.top}>
 									<div className={s.image}>
 										<Image className={s.imagem} alt={repo.name} fill={true} src={repo.image} />
@@ -25,8 +25,12 @@ export default function FeaturedRepos() {
 									</div>
 								</div>
 								<div className={s.tags}>
-									{repo.tags.map((tag) => {
-										return <span className={s.tag}>{tag}</span>;
+									{repo.tags.map((tag, index) => {
+										return (
+											<span key={tag + index} className={s.tag}>
+												{tag}
+											</span>
+										);
 									})}
 								</div>
 							</a>
@@ -34,17 +38,21 @@ export default function FeaturedRepos() {
 					})}
 				</div>
 				<div className={s.other}>
-					{Other_Repositories.map((repo) => {
+					{Other_Repositories.map((repo, index) => {
 						return (
-							<a key={repo.name} target="_blank" href={repo.link}>
+							<a key={repo.name + index} target="_blank" href={repo.link}>
 								<div className={s.other_repository}>
 									<div>
 										<span className={s.title}>{repo.name}</span>
 										<p className={s.description}>{repo.description}</p>
 									</div>
 									<div className={s.tags}>
-										{repo.tags.map((tag) => {
-											return <span className={s.tag}>{tag}</span>;
+										{repo.tags.map((tag, index) => {
+											return (
+												<span key={tag + index} className={s.tag}>
+													{tag}
+												</span>
+											);
 										})}
 									</div>
 								</div>

@@ -10,15 +10,12 @@ export default function Footer() {
 			</div>
 			<div>
 				<ul>
-					<a href={socials.github}>
-						<li>Github</li>
-					</a>
-					<a href={socials.linkedin}>
-						<li>Linkedin</li>
-					</a>
-					<a href={socials.steam}>
-						<li>Steam</li>
-					</a>
+					<li>
+						<a href={socials.github}>Github</a>
+					</li>
+					<li>
+						<a href={socials.linkedin}>Linkedin</a>
+					</li>
 				</ul>
 			</div>
 		</footer>

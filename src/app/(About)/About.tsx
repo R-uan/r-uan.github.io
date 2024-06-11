@@ -11,9 +11,9 @@ export default function About() {
 			<div className={s.about_me}>
 				<span>About Me</span>
 				<p>
-					I'm a 21 years old Brazilian eager to start my career on the area of web development. I'm looking forward to apply my knowledge in
-					a real enviroment to create amazing applications. Being able to hyperfocus on tasks and being quick to learn new technology, I
-					guarantee that I am able to find my way toward solving any given problem and successfuly completing any given task.
+					I&apos;m a 21 years old Brazilian eager to start my career on the area of web development. I&apos;m looking forward to apply my
+					knowledge in a real enviroment to create amazing applications. Being able to hyperfocus on tasks and being quick to learn new
+					technology, I guarantee that I am able to find my way toward solving any given problem and successfuly completing any given task.
 				</p>
 			</div>
 			<div className={s.languages}>
