@@ -37,7 +37,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en" className={`${Smooch.variable} ${Bebas.variable} ${JetBrains.variable}`}>
-			{children}
+			<body>{children}</body>
 		</html>
 	);
 }

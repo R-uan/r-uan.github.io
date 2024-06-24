@@ -1,18 +1,45 @@
 "use client";
-import About from "./_components/_about/About";
-import Main from "./_components/_landing/Landing";
-import Footer from "./_components/_footer/Footer";
-import Navigation from "./_components/_navigation/Navigation";
-import FeaturedRepos from "./_components/_repositories/FeaturedRepositories";
+import React from "react";
+import s from "./root.module.scss";
 
 export default function Home() {
 	return (
-		<body className="outline-[1px] p-[15px] outline outline-[#ff003c] overflow-auto min-h-screen outline-offset-[-5px] bg-[#0b0e14]">
-			<Navigation />
-			<Main />
-			<About />
-			<FeaturedRepos />
-			<Footer />
-		</body>
+		<React.Fragment>
+			<header className={s.header}>
+				<div>
+					<span>hello</span>
+				</div>
+				<nav>
+					<ul>
+						<li>
+							<span>01.</span>
+							<span>Home</span>
+						</li>
+						<li>
+							<span>02.</span>
+							<span>Home</span>
+						</li>
+						<li>
+							<span>03.</span>
+							<span>Home</span>
+						</li>
+						<li>
+							<span>04.</span>
+							<span>Home</span>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<main className={s.main}>
+				<div className={s.main_container}>
+					<div>
+						<h1>RUAN LOPES</h1>
+					</div>
+					<div>
+						<span>BRAZILLIAN SOFTWARE DEVELOPER | FULL-STACK</span>
+					</div>
+				</div>
+			</main>
+		</React.Fragment>
 	);
 }
