@@ -36,7 +36,7 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en" className={`${Smooch.variable} ${Bebas.variable} ${JetBrains.variable}`}>
+		<html lang="en" className={`scroll-bar ${Smooch.variable} ${Bebas.variable} ${JetBrains.variable}`}>
 			<body>{children}</body>
 		</html>
 	);

@@ -9,6 +9,16 @@ h1 {
 	font-style: normal;
 }
 
+html::-webkit-scrollbar {
+	display: none;
+}
+
+html {
+	scrollbar-width: 10px;
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+}
+
 nav {
 	font-family: "Smooch Sans", sans-serif;
 }
