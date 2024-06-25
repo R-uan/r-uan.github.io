@@ -1,15 +1,12 @@
 .tracker {
-	top: 50%;
 	right: 5%;
 	width: 20px;
 	display: flex;
 	position: fixed;
-	height: fit-content;
+	height: 400px;
 	align-items: center;
 	flex-direction: column;
 	justify-content: center;
-	outline: 2px solid red;
-	transform: translateY(-50%);
 
 	color: white;
 	font-size: 1.75rem;

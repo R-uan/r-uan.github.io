@@ -19,10 +19,6 @@ html {
 	-ms-overflow-style: none;
 }
 
-nav {
-	font-family: "Smooch Sans", sans-serif;
-}
-
 @layer components {
 	.code {
 		@apply font-jetbrains;

@@ -1,6 +1,5 @@
-import type { Metadata } from "next";
 import "./globals.css";
-
+import type { Metadata } from "next";
 import { Bebas_Neue, JetBrains_Mono, Smooch_Sans } from "next/font/google";
 
 const Smooch = Smooch_Sans({
