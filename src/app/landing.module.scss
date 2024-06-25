@@ -4,6 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Oswald:wght@200..700&display=swap");
 
 .main {
+	overflow: hidden;
 	min-height: 100vh;
 	background: linear-gradient(225deg, #03071e 0%, #050a0e 100%);
 }

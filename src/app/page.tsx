@@ -54,7 +54,7 @@ export default function Home() {
 								</nav>
 							</header>
 							<main className={s.main}>
-								<div className={s.landing}>
+								<section className={s.landing}>
 									<div className={s.landing_container}>
 										<div>
 											<div
@@ -91,7 +91,7 @@ export default function Home() {
 											<IoIosArrowDown size={40} fill="white" className={`${s.icon} animate-bounce`} />
 										</button>
 									</div>
-								</div>
+								</section>
 								<AboutMe />
 							</main>
 						</Suspense>
