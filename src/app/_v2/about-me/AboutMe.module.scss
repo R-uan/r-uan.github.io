@@ -1,123 +1,159 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
-.about_me {
+.about {
+	gap: 50px;
 	width: 100%;
-	height: 100vh;
 	display: flex;
+	min-height: 100vh;
+	flex-direction: row;
 	align-items: flex-end;
 	justify-content: center;
 }
 
-.about_me_content {
-	width: 85%;
-	height: 80%;
+.about_content {
+	gap: 30px;
+	width: 80%;
+	display: flex;
+	padding: 10px;
+	padding-top: 40px;
+	justify-content: center;
+	min-height: calc(100vh - 80px);
+}
+
+.about_me {
+	gap: 10px;
+	width: 45%;
+	padding: 5px;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-}
-
-.professional_profile {
-	gap: 10px;
-	width: 80%;
-	height: 50%;
-	display: flex;
-	flex-direction: row;
 
 	& > div {
-		outline: 2px solid green;
-		gap: 10px;
-		width: 400px;
-		padding: 20px;
+		gap: 20px;
 		display: flex;
-		aspect-ratio: 1/1;
-		align-items: center;
 		flex-direction: column;
-		justify-content: center;
 	}
 
-	& > div:nth-child(1) {
-		.ricon {
-			fill: #ff003c;
+	& > span {
+		line-height: 1;
+		color: #ff003c;
+		font-size: clamp(2rem, 2vw, 2vw);
+		font-weight: bold;
+		position: relative;
+	}
+
+	@media (min-width: 1081px) {
+		& > span::after {
+			right: 0;
+			top: 50%;
+			width: 80%;
+			content: "";
+			position: absolute;
+			transform: translateY(-50%);
+			border-bottom: 1px solid #8892b0;
 		}
-		border: 1px solid #ff003c;
 	}
-	& > div:nth-child(2) {
-		border: 1px solid #00f0ff;
-	}
-	& > div:nth-child(3) {
-		border: 1px solid #fcee09;
+
+	p {
+		color: #8892b0;
+		line-height: 1.25;
+		font-size: 1.5rem;
+		text-align: left;
 	}
 }
 
-.skill_header {
-	width: 100%;
-	height: 80px;
+.languages {
+	gap: 10px;
+	padding: 5px;
 	display: flex;
-	align-items: center;
+	width: fit-content;
+	flex-direction: column;
 
-	& > .icon {
-		height: 100%;
-		padding: 15px;
-		aspect-ratio: 1/1;
+	& > span {
+		text-align: right;
+		line-height: 1;
+		font-size: clamp(2rem, 2vw, 2vw);
+		position: relative;
+		color: #ff003c;
+		font-weight: bold;
+	}
 
-		& > .ricon {
-			width: 100%;
-			height: 100%;
-			object-fit: fill;
+	@media (min-width: 1081px) {
+		& > span::after {
+			left: -60px;
+			top: 50%;
+			width: 80%;
+			content: "";
+			position: absolute;
+			transform: translateY(-50%);
+			border-bottom: 1px solid #8892b0;
 		}
+	}
+}
+
+.skills {
+	gap: 7px;
+	width: 100%;
+	display: grid;
+	justify-content: space-around;
+	grid-template-columns: repeat(4, auto);
+}
+
+.skill {
+	gap: 5px;
+	width: 100px;
+	height: 100px;
+	display: flex;
+	border-radius: 6px;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #151c28;
+
+	.icon {
+		width: 40%;
+		height: 40%;
 	}
 
 	span {
-		font-family: "JetBrains Mono", monospace;
-		line-height: 1;
-		color: #fafafa;
-		font-size: 1.75rem;
+		font-size: 1.3rem;
+		line-height: 1.5rem;
 	}
 }
 
-.icons {
-	width: 100%;
-	height: 50px;
-	display: flex;
-	justify-content: space-between;
-	img {
-		border-radius: 3px;
-		background-color: #151c28;
-		padding: 5px;
-		width: 50px;
-		height: 50px;
+@media (max-width: 1200px) {
+	.about_content {
+		flex-direction: column;
 	}
-}
 
-.skill_body {
-	gap: 15px;
-	width: 100%;
-	display: flex;
-	position: relative;
-	align-items: center;
-	flex-direction: column;
+	.about_me {
+		width: 100%;
+	}
 
-	p {
-		color: #fafafa;
-		line-height: 1.25;
-		font-size: 1.25rem;
-		position: relative;
-		text-align: justify;
+	.languages {
+		width: 100%;
+
+		& > span {
+			font-size: 2.5rem;
+		}
+	}
+
+	.skills {
+		grid-template-columns: repeat(8, auto);
+	}
+
+	.skill {
+		width: clamp(50px, 9vw, 9vw);
+		height: clamp(50px, 9vw, 9vw);
+		.icon {
+			width: 60%;
+			height: 60%;
+		}
+		span {
+			display: none;
+		}
 	}
 }
 
 @media (max-width: 760px) {
-	.professional_profile {
-		outline: 2px solid red;
-		height: fit-content;
-		flex-direction: column;
-
-		& > div {
-			width: 100%;
-		}
-	}
-
-	.about_me_content {
-		height: 93%;
+	.skills {
+		grid-template-columns: repeat(5, auto);
 	}
 }
