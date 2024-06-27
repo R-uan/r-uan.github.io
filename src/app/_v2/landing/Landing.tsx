@@ -6,7 +6,7 @@ import { useAnimationTriggerContext } from "../_contexts/AnimationTriggerContext
 export default function Landing() {
 	const { animationTriggered } = useAnimationTriggerContext();
 	return (
-		<section className={s.landing}>
+		<section id="#landing" className={s.landing}>
 			<div className={s.landing_container}>
 				<div>
 					<div className={!animationTriggered ? animation.text_waiting : animation.text_loaded} style={{ animationDelay: "100ms" }}>

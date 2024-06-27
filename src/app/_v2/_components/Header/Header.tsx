@@ -30,20 +30,20 @@ export default function Header() {
 			</div>
 			<nav>
 				<ul>
-					<li className={!animationTriggered ? animation.nav_waiting : animation.nav_loaded} style={{ animationDelay: "0ms" }}>
-						<span>01.</span>
-						<span>Home</span>
-					</li>
 					<li className={!animationTriggered ? animation.nav_waiting : animation.nav_loaded} style={{ animationDelay: "100ms" }}>
-						<span>02.</span>
-						<span>About</span>
+						<a href="#about">
+							<span>01.</span>
+							<span>About</span>
+						</a>
 					</li>
 					<li className={!animationTriggered ? animation.nav_waiting : animation.nav_loaded} style={{ animationDelay: "200ms" }}>
-						<span>03.</span>
-						<span>Experience</span>
+						<a href="#projects">
+							<span>02.</span>
+							<span>Projects</span>
+						</a>
 					</li>
 					<li className={!animationTriggered ? animation.nav_waiting : animation.nav_loaded} style={{ animationDelay: "300ms" }}>
-						<span>04.</span>
+						<span>03.</span>
 						<span>Contact</span>
 					</li>
 				</ul>

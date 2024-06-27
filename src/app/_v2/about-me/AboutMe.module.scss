@@ -1,3 +1,5 @@
+@use "../variables";
+
 .about {
 	gap: 50px;
 	width: 100%;
@@ -33,10 +35,10 @@
 
 	& > span {
 		line-height: 1;
-		color: #ff003c;
-		font-size: clamp(2rem, 2vw, 2vw);
 		font-weight: bold;
 		position: relative;
+		color: variables.$primary-heading-color;
+		font-size: variables.$primary-heading-size;
 	}
 
 	@media (min-width: 1081px) {
@@ -47,15 +49,15 @@
 			content: "";
 			position: absolute;
 			transform: translateY(-50%);
-			border-bottom: 1px solid #8892b0;
+			border-bottom: 1px solid variables.$primary-paragraph-color;
 		}
 	}
 
 	p {
-		color: #8892b0;
+		text-align: left;
 		line-height: 1.25;
 		font-size: 1.5rem;
-		text-align: left;
+		color: variables.$primary-paragraph-color;
 	}
 }
 
@@ -67,12 +69,12 @@
 	flex-direction: column;
 
 	& > span {
-		text-align: right;
 		line-height: 1;
-		font-size: clamp(2rem, 2vw, 2vw);
-		position: relative;
-		color: #ff003c;
 		font-weight: bold;
+		text-align: right;
+		position: relative;
+		color: variables.$primary-heading-color;
+		font-size: variables.$primary-heading-size;
 	}
 
 	@media (min-width: 1081px) {
@@ -83,7 +85,7 @@
 			content: "";
 			position: absolute;
 			transform: translateY(-50%);
-			border-bottom: 1px solid #8892b0;
+			border-bottom: 1px solid variables.$primary-paragraph-color;
 		}
 	}
 }

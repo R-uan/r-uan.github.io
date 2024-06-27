@@ -5,7 +5,7 @@ import { PrimarySkills } from "../../_scripts/Skills";
 
 export default function About() {
 	return (
-		<section className={s.about}>
+		<section id="about" className={s.about}>
 			<div className={s.about_content}>
 				<div className={s.about_me}>
 					<span>ABOUT ME</span>
