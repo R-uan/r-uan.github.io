@@ -46,18 +46,24 @@
 		border-radius: 3px;
 		border: 1px solid #ff003c;
 
-		button {
+		.link {
+			display: flex;
+			justify-content: center;
+			align-items: center;
 			width: 100%;
 			height: 100%;
-			color: #ff003c;
-			font-weight: 500;
-			font-size: 1.25rem;
 		}
 
-		& > button:hover {
-			border-radius: 3px;
-			background-color: #fafafa;
+		span {
+			color: #ff003c;
+			font-weight: 300;
+			font-size: 1.25rem;
 		}
+	}
+
+	& > .resume:hover {
+		border-radius: 3px;
+		background-color: #fafafa;
 	}
 
 	& > div {

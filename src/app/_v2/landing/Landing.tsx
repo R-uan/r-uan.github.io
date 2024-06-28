@@ -2,6 +2,7 @@ import s from "./Landing.module.scss";
 import { IoIosArrowDown } from "react-icons/io";
 import animation from "../animations.module.scss";
 import { useAnimationTriggerContext } from "../_contexts/AnimationTriggerContext";
+import Link from "next/link";
 
 export default function Landing() {
 	const { animationTriggered } = useAnimationTriggerContext();
@@ -23,7 +24,9 @@ export default function Landing() {
 					</p>
 				</div>
 				<div className={`${s.resume} ${!animationTriggered ? animation.resume_waiting : animation.resume_loaded}`}>
-					<button className={s.shadow_pop_tr}>My Resume</button>
+					<Link href={"/resume-portuguese"} target="_blank" className={`${s.shadow_pop_tr} ${s.link}`}>
+						<span> My Resume</span>
+					</Link>
 				</div>
 			</div>
 			<div className={`${s.silly} ${!animationTriggered ? animation.text_waiting : animation.text_loaded}`}>

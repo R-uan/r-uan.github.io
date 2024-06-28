@@ -9,9 +9,9 @@
 	position: relative;
 	align-items: center;
 	flex-direction: column;
-	outline: 1px solid red;
 	justify-content: flex-end;
 }
+
 /// MOSTLY DONE ?
 .projects {
 	gap: 30px;
@@ -24,7 +24,6 @@
 	padding-bottom: 50px;
 	flex-direction: column;
 	min-height: calc(100vh - 80px);
-	outline: 2px solid red;
 
 	& > div:first-child {
 		height: fit-content;
@@ -179,7 +178,6 @@
 		& > li {
 			height: calc(30vh);
 
-			outline: 2px solid yellow;
 			align-items: flex-end;
 		}
 	}
