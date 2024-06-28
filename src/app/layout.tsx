@@ -1,5 +1,6 @@
-import "./globals.css";
 import type { Metadata } from "next";
+import "./globals.css";
+
 import { Bebas_Neue, JetBrains_Mono, Smooch_Sans } from "next/font/google";
 
 const Smooch = Smooch_Sans({
@@ -35,8 +36,8 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en" className={`scroll-bar ${Smooch.variable} ${Bebas.variable} ${JetBrains.variable}`}>
-			<body>{children}</body>
+		<html lang="en" className={`${Smooch.variable} ${Bebas.variable} ${JetBrains.variable}`}>
+			{children}
 		</html>
 	);
 }
