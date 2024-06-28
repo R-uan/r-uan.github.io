@@ -19,8 +19,8 @@ export default function Landing() {
 				</div>
 				<div className={!animationTriggered ? animation.text_waiting : animation.text_loaded} style={{ animationDelay: "300ms" }}>
 					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut pariatur debitis, eligendi quibusdam non, reiciendis nemo nostrum
-						enim quo ipsum eius expedita hic. Saepe velit ipsa ut consequatur quam soluta?
+						Aspiring software developer aiming to establish myself in the tech field by creating high-quality applications. Highly
+						motivated to contribute to challenging projects and enhancing my knowledge
 					</p>
 				</div>
 				<div className={`${s.resume} ${!animationTriggered ? animation.resume_waiting : animation.resume_loaded}`}>

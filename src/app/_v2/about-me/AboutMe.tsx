@@ -11,16 +11,15 @@ export default function About() {
 					<span>ABOUT ME</span>
 					<div>
 						<p>
-							I&apos;m a 21 years old Brazilian eager to start my career on the area of web development. I&apos;m looking forward to
-							apply my knowledge in a real enviroment to create amazing applications. Being able to hyperfocus on tasks and being quick
-							to learn new technology, I guarantee that I am able to find my way toward solving any given problem and successfuly
-							completing any given task.
+							Hi! My name is Ruan, and I am an aspiring software developer working towards a career in the field. My journey with
+							technology began when I was 8 years old, and since then, it has been an integral part of my daily life, contributing
+							significantly to my personal and educational development. Naturally, I found myself passionate about technology and
+							decided to pursue a career as a software developer, aiming to climb the professional ladder in this exciting field.
 						</p>
 						<p>
-							I&apos;m a 21 years old Brazilian eager to start my career on the area of web development. I&apos;m looking forward to
-							apply my knowledge in a real enviroment to create amazing applications. Being able to hyperfocus on tasks and being quick
-							to learn new technology, I guarantee that I am able to find my way toward solving any given problem and successfuly
-							completing any given task.
+							I seek to establish myself in the technology field and utilize my experience in software development to create
+							high-quality applications. I am highly motivated to contribute to challenging projects that add value to my knowledge and
+							help me become a well-rounded and indispensable professional.
 						</p>
 					</div>
 				</div>
