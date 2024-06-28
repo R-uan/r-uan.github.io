@@ -43,8 +43,10 @@ export default function Header() {
 						</a>
 					</li>
 					<li className={!animationTriggered ? animation.nav_waiting : animation.nav_loaded} style={{ animationDelay: "300ms" }}>
-						<span>03.</span>
-						<span>Contact</span>
+						<a href="#contact">
+							<span>03.</span>
+							<span>Contact</span>
+						</a>
 					</li>
 				</ul>
 			</nav>

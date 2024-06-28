@@ -1,8 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-	/* basePath: "/",
+	basePath: "/",
 	output: "export",
-	reactStrictMode: true, */
+	reactStrictMode: true,
+	async rewrites() {
+		return [
+			{
+				source: "/resume-:language",
+				destination: "/resume/:language",
+			},
+		];
+	},
 };
 
 export default nextConfig;

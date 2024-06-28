@@ -1,19 +1,21 @@
 @use "../variables.scss";
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Inter:wght@100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Oswald:wght@200..700&display=swap");
 
-.projects {
+/// DO NOT CHANGE THIS
+.section {
 	width: 100%;
 	display: flex;
 	min-height: 100vh;
 	position: relative;
 	align-items: center;
 	flex-direction: column;
+	outline: 1px solid red;
 	justify-content: flex-end;
 }
-
-.projects_content {
+/// MOSTLY DONE ?
+.projects {
 	gap: 30px;
-	width: 70%;
+	width: 80%;
 	padding: 2px;
 	display: flex;
 	margin-top: 80px;
@@ -22,6 +24,7 @@
 	padding-bottom: 50px;
 	flex-direction: column;
 	min-height: calc(100vh - 80px);
+	outline: 2px solid red;
 
 	& > div:first-child {
 		height: fit-content;
@@ -35,7 +38,7 @@
 	}
 }
 
-.projects {
+.projects_list {
 	gap: 70px;
 	width: 100%;
 	display: flex;
@@ -50,16 +53,16 @@
 	}
 }
 
-.project_content {
+.single_project_body {
 	gap: 20px;
-	z-index: 1;
+	z-index: 2;
 	width: 550px;
 	display: flex;
 	padding: 10px;
 	height: fit-content;
 	flex-direction: column;
 
-	.title {
+	.project_title {
 		gap: 5px;
 		height: 50px;
 		display: flex;
@@ -86,7 +89,7 @@
 		}
 	}
 
-	.summary {
+	.project_sumary {
 		width: 100%;
 		border-radius: 3px;
 		height: fit-content;
@@ -102,10 +105,11 @@
 		}
 	}
 
-	.stack {
+	.project_stack {
 		& > ul {
 			gap: 10px;
 			display: flex;
+			flex-wrap: wrap;
 			& > li {
 				line-height: 1;
 				padding: 5px 10px;
@@ -117,17 +121,17 @@
 			}
 		}
 	}
-}
 
-.links {
-	& > ul {
-		gap: 15px;
-		display: flex;
-		li {
-			.icon {
-				height: 25px;
-				width: 25px;
-				fill: variables.$primary-paragraph-color;
+	.project_links {
+		& > ul {
+			gap: 15px;
+			display: flex;
+			li {
+				.icon {
+					height: 25px;
+					width: 25px;
+					fill: variables.$primary-paragraph-color;
+				}
 			}
 		}
 	}
@@ -136,6 +140,7 @@
 .project_image {
 	top: 50%;
 	right: 0;
+	z-index: 0;
 	width: 60%;
 	position: absolute;
 	border-radius: 6px;
@@ -160,28 +165,35 @@
 }
 
 @media (max-width: 1100px) {
-	.projects_content {
-		width: 80%;
-		height: fit-content;
+	.section {
+		min-height: 0;
 	}
 	.projects {
-		gap: 25px;
-
-		& > li {
-			align-items: flex-end;
-		}
+		width: 85%;
+		min-height: 0;
 	}
 
-	.project_image {
-		top: 0;
-		transform: translateY(0);
+	.projects_list {
+		gap: 25px;
+		height: fit-content;
+		& > li {
+			height: calc(30vh);
+
+			outline: 2px solid yellow;
+			align-items: flex-end;
+		}
 	}
 }
 
 @media (max-width: 651px) {
-	.projects_content {
+	.section {
+		min-height: 0;
+	}
+	.projects {
 		width: 80%;
+		min-height: 0;
 		padding-top: 0;
+		padding-bottom: 0;
 		.stack {
 			& > ul {
 				flex-wrap: wrap;
@@ -190,24 +202,26 @@
 				}
 			}
 		}
-	}
 
-	.projects {
-		width: 100%;
-
-		& > li {
-			box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.75);
+		.projects_list {
+			width: 100%;
 			height: fit-content;
+			min-height: fit-content;
+			justify-content: normal;
+			& > li {
+				box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.75);
+				height: fit-content;
+			}
 		}
 	}
 
-	.project_content {
+	.single_project_body {
 		padding: 15px;
 		width: 100%;
 		height: 100%;
 		background-color: #0a192f;
 
-		.title {
+		.project_title {
 			h3 {
 				font-size: 1.25rem;
 			}
@@ -217,7 +231,7 @@
 			}
 		}
 
-		.summary {
+		.project_sumary {
 			padding: 0;
 			box-shadow: none;
 			background-color: transparent;

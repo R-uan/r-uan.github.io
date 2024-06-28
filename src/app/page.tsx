@@ -1,7 +1,7 @@
 "use client";
 import { Suspense } from "react";
 import AnimationTriggerProvider from "./_v2/_contexts/AnimationTriggerContext";
-import { AboutMe, Projects, Header, Loading, MobileMenu, ScrollTracker, Landing } from "./_v2/exports";
+import { AboutMe, Projects, Header, Loading, MobileMenu, ScrollTracker, Landing, Contacts } from "./_v2/exports";
 
 export default function Home() {
 	return (
@@ -14,6 +14,7 @@ export default function Home() {
 					<Landing />
 					<AboutMe />
 					<Projects />
+					<Contacts />
 				</main>
 			</Suspense>
 		</AnimationTriggerProvider>
