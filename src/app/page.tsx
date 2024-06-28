@@ -1,18 +1,22 @@
 "use client";
-import About from "./_components/_about/About";
-import Main from "./_components/_landing/Landing";
-import Footer from "./_components/_footer/Footer";
-import Navigation from "./_components/_navigation/Navigation";
-import FeaturedRepos from "./_components/_repositories/FeaturedRepositories";
+import { Suspense } from "react";
+import AnimationTriggerProvider from "./_v2/_contexts/AnimationTriggerContext";
+import { AboutMe, Projects, Header, Loading, MobileMenu, ScrollTracker, Landing, Contacts } from "./_v2/exports";
 
 export default function Home() {
 	return (
-		<body className="outline-[1px] p-[15px] outline outline-[#ff003c] overflow-auto min-h-screen outline-offset-[-5px] bg-[#0b0e14]">
-			<Navigation />
-			<Main />
-			<About />
-			<FeaturedRepos />
-			<Footer />
-		</body>
+		<AnimationTriggerProvider>
+			<Suspense fallback={<Loading />}>
+				<ScrollTracker />
+				<MobileMenu />
+				<Header />
+				<main>
+					<Landing />
+					<AboutMe />
+					<Projects />
+					<Contacts />
+				</main>
+			</Suspense>
+		</AnimationTriggerProvider>
 	);
 }
