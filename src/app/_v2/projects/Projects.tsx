@@ -7,8 +7,8 @@ export default function Projects() {
 	return (
 		<section id="projects" className={s.section}>
 			<div className={s.projects}>
-				<div>
-					<h1>Stuff I have Done</h1>
+				<div>					
+					<h1>Stuff I Have Done</h1>
 				</div>
 				<ul className={s.projects_list}>
 					{MyProjects.map((project) => {
