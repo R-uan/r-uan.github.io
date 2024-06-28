@@ -2,6 +2,7 @@ import s from "./Projects.module.scss";
 import { MyProjects } from "./MyProjects";
 import { FaGithub } from "react-icons/fa6";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import Image from "next/image";
 
 export default function Projects() {
 	return (
@@ -48,7 +49,7 @@ export default function Projects() {
 								</div>
 								<div className={s.project_image}>
 									<div className={s.cover} />
-									<img alt="" src="/tes.jpeg"></img>
+									<Image alt="" fill={true} src={project.image}></Image>
 								</div>
 							</li>
 						);
