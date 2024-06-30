@@ -1,3 +1,4 @@
+import Link from "next/link";
 import s from "./MobileMenu.module.scss";
 import { IoCloseSharp } from "react-icons/io5";
 
@@ -19,22 +20,35 @@ export default function MobileMenu() {
 				<nav>
 					<ul>
 						<li>
-							<span>01.</span>
-							<span>Home</span>
+							<a href="#landing">
+								<span>01.</span>
+								<span>Home</span>
+							</a>
 						</li>
 						<li>
-							<span>02.</span>
-							<span>About</span>
+							<a href="#about">
+								<span>02.</span>
+								<span>About</span>
+							</a>
 						</li>
 						<li>
-							<span>03.</span>
-							<span>Experience</span>
+							<a href="#projects">
+								<span>03.</span>
+								<span>Experience</span>
+							</a>
 						</li>
 						<li>
-							<span>04.</span>
-							<span>Contact</span>
+							<a href="#contact">
+								<span>04.</span>
+								<span>Contact</span>
+							</a>
 						</li>
 					</ul>
+					<div className={s.resume}>
+						<Link className={s.link} href={"/resume-portuguese"}>
+							<span>My Resume</span>
+						</Link>
+					</div>
 				</nav>
 			</div>
 		</div>

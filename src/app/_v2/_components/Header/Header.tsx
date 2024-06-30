@@ -2,6 +2,7 @@ import s from "./Header.module.scss";
 import animation from "../../animations.module.scss";
 import { useAnimationTriggerContext } from "../../_contexts/AnimationTriggerContext";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 export default function Header() {
 	const [scrollPosition, setScrollPosition] = useState(0);
@@ -21,11 +22,11 @@ export default function Header() {
 	}, []);
 
 	return (
-		<header className={`${s.header} ${scrollPosition > 100 ? s.alternative_header : null}`}>
+		<header className={s.header}>
 			<div className={s.mobile_menu_toggle}>
 				<button onClick={OpenSideMenu}>Open</button>
 			</div>
-			<div>
+			<div className={`${!animationTriggered ? animation.nav_waiting : animation.bounce_in_top}`} style={{ animationDelay: "2s" }}>
 				<span>hello world</span>
 			</div>
 			<nav>
@@ -36,19 +37,26 @@ export default function Header() {
 							<span>About</span>
 						</a>
 					</li>
-					<li className={!animationTriggered ? animation.nav_waiting : animation.nav_loaded} style={{ animationDelay: "200ms" }}>
+					<li className={!animationTriggered ? animation.nav_waiting : animation.nav_loaded} style={{ animationDelay: "250ms" }}>
 						<a href="#projects">
 							<span>02.</span>
 							<span>Projects</span>
 						</a>
 					</li>
-					<li className={!animationTriggered ? animation.nav_waiting : animation.nav_loaded} style={{ animationDelay: "300ms" }}>
+					<li className={!animationTriggered ? animation.nav_waiting : animation.nav_loaded} style={{ animationDelay: "400ms" }}>
 						<a href="#contact">
 							<span>03.</span>
 							<span>Contact</span>
 						</a>
 					</li>
 				</ul>
+				<div
+					className={`${s.resume} ${!animationTriggered ? animation.nav_waiting : animation.nav_loaded}`}
+					style={{ animationDelay: "550ms" }}>
+					<Link href={"/resume-portuguese"} target="_blank" className={`${s.shadow_pop_tr} ${s.link}`}>
+						<span> My Resume</span>
+					</Link>
+				</div>
 			</nav>
 		</header>
 	);

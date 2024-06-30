@@ -8,19 +8,16 @@
 
 html {
 	scrollbar-width: thin;
-	scrollbar-color: white #03071b;
-}
-
-@media (min-width: 1080px) {
-	html {
-		scroll-snap-type: y proximity;
-	}
+	scrollbar-color: white #030911;
 }
 
 main {
 	height: fit-content;
 	min-height: 100vh;
-	background: linear-gradient(225deg, #03071e 0%, #050a0e 100%);
+}
+
+body {
+	background-color: #030911 /* linear-gradient(225deg, #03071e 0%, #050a0e 100%) */;
 }
 
 section {

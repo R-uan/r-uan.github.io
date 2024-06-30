@@ -15,7 +15,7 @@
 /// MOSTLY DONE ?
 .projects {
 	gap: 30px;
-	width: 80%;
+	width: 65%;
 	padding: 2px;
 	display: flex;
 	margin-top: 80px;
@@ -47,7 +47,7 @@
 		width: 100%;
 		display: flex;
 		position: relative;
-		height: calc(50vh);
+		height: calc(45vh);
 		align-items: center;
 	}
 }
@@ -140,7 +140,7 @@
 	top: 50%;
 	right: 0;
 	z-index: 0;
-	width: 60%;
+	height: 100%;
 	position: absolute;
 	border-radius: 6px;
 	aspect-ratio: 16 / 9;

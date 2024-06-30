@@ -1,0 +1,15 @@
+@use "../../variables.scss";
+
+.footer {
+	padding: 15px 20px;
+	width: 100%;
+	height: 80px;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	color: variables.$primary-paragraph-color;
+	h3 {
+		font-size: 1.325rem;
+	}
+}

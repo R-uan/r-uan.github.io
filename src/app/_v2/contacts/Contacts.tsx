@@ -2,7 +2,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaDiscord, FaGithub, FaSkype } from "react-icons/fa6";
 import { SiGmail } from "react-icons/si";
 import s from "./Contacts.module.scss";
-import CodeBlock from "@/app/_components/_landing/CodeBlock";
+import CodeBlock from "@/app/_v2/_components/CodeBlockInformation/CodeBlock";
 export default function Contacts() {
 	const CopyToClipBoard = (text: string) => {
 		navigator.clipboard.writeText(text);
@@ -55,13 +55,7 @@ export default function Contacts() {
 							</ul>
 							<span id="copy-message" className={s.copy_message}></span>
 						</div>
-						<div className={s.code_block}>
-							<CodeBlock />
-						</div>
 					</div>
-				</div>
-				<div className={s.big_picture}>
-					<h3>Need to take a picture to put here</h3>
 				</div>
 			</div>
 		</section>

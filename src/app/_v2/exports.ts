@@ -6,3 +6,4 @@ export { default as Header } from "./_components/Header/Header";
 export { default as MobileMenu } from "./_components/MobileMenu/MobileMenu";
 export { default as ScrollTracker } from "./_components/ScrollTracker/ScrollTracker";
 export { default as Contacts } from "./contacts/Contacts";
+export { default as CodeBlock } from "./_components/CodeBlockInformation/CodeBlock";

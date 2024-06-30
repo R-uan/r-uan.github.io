@@ -1,5 +1,6 @@
 .personal_information {
 	width: 100%;
+	margin-top: 20px;
 	position: relative;
 	height: fit-content;
 
@@ -17,6 +18,10 @@
 		.variable {
 			color: #00cc99;
 		}
+
+		.string {
+			color: #d5714d;
+		}
 	}
 }
 
@@ -29,8 +34,9 @@
 		.code {
 			gap: 10px;
 			display: flex;
+
 			& > span {
-				font-size: clamp(1rem, 5vw, 1.3rem);
+				font-size: clamp(1rem, 4.3vw, 1.25rem);
 				line-height: 1.6rem;
 			}
 			.keyword {

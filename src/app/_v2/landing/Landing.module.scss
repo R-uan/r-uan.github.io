@@ -39,33 +39,6 @@
 	justify-content: center;
 	transform: translate(-50%, -50%);
 
-	.resume {
-		height: 50px;
-		width: 150px;
-		margin-top: 20px;
-		border-radius: 3px;
-		border: 1px solid #ff003c;
-
-		.link {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			width: 100%;
-			height: 100%;
-		}
-
-		span {
-			color: #ff003c;
-			font-weight: 300;
-			font-size: 1.25rem;
-		}
-	}
-
-	& > .resume:hover {
-		border-radius: 3px;
-		background-color: #fafafa;
-	}
-
 	& > div {
 		h1 {
 			color: #f2e9e4;
@@ -80,7 +53,7 @@
 			width: 50%;
 			color: #f2e9e4;
 			line-height: 1;
-			font-size: clamp(5px, 8vw, 1.25rem);
+			font-size: clamp(5px, 8vw, 1.35rem);
 		}
 
 		span {
