@@ -14,7 +14,7 @@ export default function About() {
 					<span>{DisplayLanguage?.about.fields.about_me}</span>
 					<div>
 						{DisplayLanguage?.about.values.aboutMe.map((text) => {
-							return <p>{text}</p>;
+							return <p key={text.charAt(2) + "text"}>{text}</p>;
 						})}
 					</div>
 				</div>
