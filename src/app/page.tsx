@@ -1,25 +1,28 @@
 "use client";
 import { Suspense } from "react";
-import AnimationTriggerProvider from "./_v2/_contexts/AnimationTriggerContext";
-import { AboutMe, Projects, Header, Loading, MobileMenu, ScrollTracker, Landing, Contacts } from "./_v2/exports";
-import Footer from "./_v2/_components/Footer/Footer";
-import AlternativeHeader from "./_v2/_components/Header/AlternativeHeader";
+import Footer from "@/app/_components/Footer/Footer";
+import AlternativeHeader from "@/app/_components/Header/AlternativeHeader";
+import DisplayLanguageProvider from "@/app/_contexts/DisplayLanguageContext";
+import AnimationTriggerProvider from "@/app/_contexts/AnimationTriggerContext";
+import { AboutMe, Contacts, Header, Landing, Loading, MobileMenu, Projects, ScrollTracker } from "./exports";
 
 export default function Home() {
 	return (
 		<AnimationTriggerProvider>
 			<Suspense fallback={<Loading />}>
-				<ScrollTracker />
-				<MobileMenu />
-				<Header />
-				<AlternativeHeader />
-				<main>
-					<Landing />
-					<AboutMe />
-					<Projects />
-					<Contacts />
-				</main>
-				<Footer />
+				<DisplayLanguageProvider>
+					<ScrollTracker />
+					<MobileMenu />
+					<Header />
+					<AlternativeHeader />
+					<main>
+						<Landing />
+						<AboutMe />
+						<Projects />
+						<Contacts />
+					</main>
+					<Footer />
+				</DisplayLanguageProvider>
 			</Suspense>
 		</AnimationTriggerProvider>
 	);

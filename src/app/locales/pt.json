@@ -1,0 +1,38 @@
+{
+	"heading": {
+		"home": "Inicio",
+		"about": "Sobre",
+		"experience": "Experiência",
+		"contact": "Contato",
+		"resume": "Curriculum"
+	},
+	"landing": {
+		"title": "Desenvolvedor Full-stack.",
+		"introduction": "Desenvolvedor de software junior com o objetivo de me estabelecer no campo da tecnologia através da criação de aplicações de alta qualidade. Altamente motivado a contribuir para projetos desafiadores e a expandir meu conhecimento.",
+		"codeBlock": {
+			"fields": {
+				"age": "idade",
+				"nationality": "nacionalidade",
+				"languages": "idiomas"
+			},
+			"values": { "nationality": "brasileiro", "languages": ["portugês", "inglês"] }
+		}
+	},
+	"about": {
+		"fields": {
+			"about_me": "Sobre mim",
+			"technologies": "Tecnologias"
+		},
+		"values": {
+			"aboutMe": [
+				"Olá! Meu nome é Ruan, e sou um desenvolvedor de software, trabalhando para construir uma carreira neste campo. Minha jornada com a tecnologia começou aos 8 anos de idade e, desde então, ela tem sido parte integral da minha vida diária, contribuindo significativamente para meu desenvolvimento pessoal e educacional. Naturalmente, desenvolvi paixão pela tecnologia e decidi seguir uma carreira como desenvolvedor de software, com o objetivo de avançar na escada profissional neste campo empolgante.",
+				"Busco me estabelecer no campo da tecnologia e utilizar meus conhecimentos em desenvolvimento de software para criar aplicações de alta qualidade. Estou altamente motivado para contribuir em projetos desafiadores que agreguem valor ao meu conhecimento e me ajudem a me tornar um profissional completo e indispensável."
+			]
+		}
+	},
+	"resume": "/resume-portuguese",
+	"contact": {
+		"title": "Disponivel para contratação",
+		"value": "Se você olhou para o meu currículo e acha que eu me encaixo no seu projeto, não hesite em entra em contato. Estou disposto a trabalhar em qualquer projeto que me permita obter experiências positivas no campo do desenvolvimento de software."
+	}
+}
