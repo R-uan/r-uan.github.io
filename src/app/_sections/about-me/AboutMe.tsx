@@ -13,7 +13,7 @@ export default function About() {
 
 	useEffect(() => {
 		if (scrollPosition > 300 && !loaded) setLoadStatus(true);
-	}, [scrollPosition]);
+	}, [scrollPosition, loaded]);
 
 	return (
 		<section id="about" className={`${s.about} ${!loaded ? null : animation.fade_in_bottom}`}>

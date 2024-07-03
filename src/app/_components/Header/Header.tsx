@@ -14,7 +14,7 @@ export default function Header() {
 			<div className={s.mobile_menu_toggle}>
 				<button onClick={OpenSideMenu}>Open</button>
 			</div>
-			<div className={`${!animationTriggered ? animation.nav_waiting : animation.bounce_in_top}`} style={{ animationDelay: "2s" }}>
+			<div className={`${s.logo} ${!animationTriggered ? animation.nav_waiting : animation.bounce_in_top}`} style={{ animationDelay: "2s" }}>
 				<span>hello world</span>
 			</div>
 			<nav>

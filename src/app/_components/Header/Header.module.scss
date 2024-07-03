@@ -1,5 +1,5 @@
 .header {
-	top: 15%;
+	top: 13%;
 	left: 50%;
 	width: 80%;
 	z-index: 90;
@@ -92,6 +92,20 @@
 
 .mobile_menu_toggle {
 	display: none;
+}
+
+.logo {
+	span {
+		display: none;
+	}
+}
+
+@media (min-width: 860px) {
+	.logo {
+		span {
+			display: block;
+		}
+	}
 }
 
 @media (max-width: 760px) {

@@ -4,7 +4,7 @@ import Footer from "@/app/_components/Footer/Footer";
 import AlternativeHeader from "@/app/_components/Header/AlternativeHeader";
 import DisplayLanguageProvider from "@/app/_contexts/DisplayLanguageContext";
 import AnimationTriggerProvider from "@/app/_contexts/AnimationTriggerContext";
-import { AboutMe, Contacts, Header, Landing, Loading, MobileMenu, Projects, ScrollTracker } from "./exports";
+import { AboutMe, Contacts, Header, Landing, Loading, MobileMenu, Projects, RightMenu } from "./exports";
 import WindowScrollProvider from "./_contexts/WindowScrollContext";
 
 export default function Home() {
@@ -13,7 +13,7 @@ export default function Home() {
 			<WindowScrollProvider>
 				<Suspense fallback={<Loading />}>
 					<DisplayLanguageProvider>
-						<ScrollTracker />
+						<RightMenu />
 						<MobileMenu />
 						<Header />
 						<AlternativeHeader />

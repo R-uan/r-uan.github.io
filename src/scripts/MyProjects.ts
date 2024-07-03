@@ -10,7 +10,7 @@ export const MyProjects: IProjects[] = [
 	{
 		title: "Art Gallery Api",
 		description:
-			"Web Application using ASP.NET Core. Started as just an API but I decided to learn Blazor and create an admin panel on the existing application. Uses PostgreSQL as the main database, redis as caching database and JWT for admin authentication",
+			"Developed a comprehensive web application using ASP.NET Core. Initially designed as an API, the project evolved to include an admin panel built with Blazor, showcasing my ability to learn and integrate new technologies. Utilized PostgreSQL as the primary database, implemented Redis for caching to improve performance, and secured admin authentication with JWT.",
 		image: "/projects/dotnet.png",
 		tags: ["C#", "ASP.NET Core", "PostgreSQL", "Redis", "API", "JWT", "Blazor"],
 		links: {

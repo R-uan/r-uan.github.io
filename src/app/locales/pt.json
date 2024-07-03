@@ -15,7 +15,7 @@
 				"nationality": "nacionalidade",
 				"languages": "idiomas"
 			},
-			"values": { "nationality": "brasileiro", "languages": ["portugês", "inglês"] }
+			"values": { "nationality": "brasileiro", "languages": ["português", "inglês"] }
 		}
 	},
 	"about": {
