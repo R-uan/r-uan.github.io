@@ -49,7 +49,7 @@ export default function Projects() {
 								</div>
 								<div className={s.project_image}>
 									<div className={s.cover} />
-									<Image alt="" fill={true} src={project.image}></Image>
+									<Image alt="" className={s.image} fill={true} src={project.image}></Image>
 								</div>
 							</li>
 						);

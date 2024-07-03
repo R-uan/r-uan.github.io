@@ -1,24 +1,13 @@
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import s from "./AlternativeHeader.module.scss";
+import { useWindowScrollContext } from "@/app/_contexts/WindowScrollContext";
 import { useDisplayLanguageContext } from "@/app/_contexts/DisplayLanguageContext";
 
 export default function AlternativeHeader() {
-	const [scrollPosition, setScrollPosition] = useState(0);
+	const { scrollPosition } = useWindowScrollContext();
 	const { DisplayLanguage } = useDisplayLanguageContext();
 	const OpenSideMenu = () => (document.getElementById("mobile-menu")!.style.width = "350px");
-
-	function HandleScroll() {
-		const position = window.scrollY;
-		setScrollPosition(position);
-	}
-
-	useEffect(() => {
-		window.addEventListener("scroll", HandleScroll, { passive: true });
-		return () => {
-			window.removeEventListener("scroll", HandleScroll);
-		};
-	}, []);
 
 	useEffect(() => {
 		if (scrollPosition > 300) {

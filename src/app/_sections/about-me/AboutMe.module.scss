@@ -1,7 +1,29 @@
 @use "../../variables.scss";
 
+.big_text {
+	line-height: 1;
+	font-weight: bold;
+	width: fit-content;
+	position: relative;
+	margin-bottom: 20px;
+	color: variables.$primary-heading-color;
+	font-size: variables.$primary-heading-size;
+}
+
+@media (min-width: 1081px) {
+	.big_text::after {
+		top: 50%;
+		width: 100%;
+		content: "";
+		right: -105%;
+		position: absolute;
+		transform: translateY(-50%);
+		border-bottom: 1px solid variables.$primary-paragraph-color;
+	}
+}
 .about {
 	gap: 50px;
+	opacity: 0;
 	width: 100%;
 	display: flex;
 	min-height: 100vh;
@@ -31,27 +53,6 @@
 		gap: 20px;
 		display: flex;
 		flex-direction: column;
-	}
-
-	& > span {
-		line-height: 1;
-		font-weight: bold;
-		width: fit-content;
-		position: relative;
-		color: variables.$primary-heading-color;
-		font-size: variables.$primary-heading-size;
-	}
-
-	@media (min-width: 1081px) {
-		& > span::after {
-			top: 50%;
-			width: 100%;
-			content: "";
-			right: -105%;
-			position: absolute;
-			transform: translateY(-50%);
-			border-bottom: 1px solid variables.$primary-paragraph-color;
-		}
 	}
 
 	p {
