@@ -1,288 +1,225 @@
 @use "../../variables.scss";
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Inter:wght@100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Oswald:wght@200..700&display=swap");
 
-/// DO NOT CHANGE THIS
-.section {
-	width: 100%;
-	display: flex;
-	min-height: 100vh;
-	position: relative;
-	align-items: center;
-	flex-direction: column;
-	justify-content: flex-end;
-}
-
-/// MOSTLY DONE ?
-.projects {
-	gap: 30px;
-	width: 70%;
-	padding: 2px;
-	display: flex;
-	margin-top: 80px;
-	padding-top: 50px;
-	align-items: center;
-	padding-bottom: 50px;
-	flex-direction: column;
-	min-height: calc(100vh - 80px);
-
-	& > div:first-child {
-		height: fit-content;
+@media (min-width: 200px) {
+	.section {
 		width: 100%;
+		display: flex;
+		margin-top: 70px;
+		max-width: 100vw;
+		min-height: 100vh;
+		position: relative;
+		align-items: center;
+		flex-direction: column;
+		justify-content: flex-end;
 
-		& > h1 {
-			line-height: 1;
-			color: variables.$primary-heading-color;
-			font-size: variables.$primary-heading-size;
+		.header {
+			width: 90%;
+			& > h1 {
+				line-height: 1;
+				color: variables.$primary-heading-color;
+				font-size: variables.$primary-heading-size;
+			}
+		}
+
+		.projects {
+			gap: 30px;
+			width: 90%;
+			padding: 2px;
+			display: flex;
+			margin-top: 20px;
+			align-items: center;
+			flex-direction: column;
+
+			.projects_list {
+				gap: 20px;
+				width: 100%;
+				display: flex;
+				position: relative;
+				height: fit-content;
+				flex-direction: column;
+
+				.individual_project {
+					width: 100%;
+					position: relative;
+					height: fit-content;
+					box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.75);
+				}
+			}
 		}
 	}
-}
 
-.projects_list {
-	gap: 70px;
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-
-	& > li {
-		width: 100%;
+	.project_body {
+		gap: 20px;
+		z-index: 2;
+		height: 100%;
 		display: flex;
-		margin: 50px 0px;
-		position: relative;
-		height: fit-content;
+		padding: 23px;
 		align-items: center;
-	}
-}
-
-.single_project_body {
-	gap: 20px;
-	z-index: 2;
-	width: 550px;
-	display: flex;
-	padding: 10px;
-	height: fit-content;
-	flex-direction: column;
-
-	.project_title {
-		gap: 5px;
-		height: 50px;
-		display: flex;
-		color: #00eeffb5;
-		width: fit-content;
-		position: relative;
 		flex-direction: column;
 		justify-content: center;
-		padding: 5px 0px 5px 0px;
-		font-family: "Oswald", sans-serif;
-
-		h3 {
-			line-height: 1;
-			font-weight: 500;
-			font-size: 1.75rem;
-			font-family: "JetBrains Mono", monospace;
-		}
-
-		span {
-			color: white;
-			line-height: 1;
-			font-weight: 200;
-			font-family: "Fira Code", monospace;
-		}
-	}
-
-	.project_sumary {
-		width: 100%;
-		border-radius: 3px;
-		height: fit-content;
-		background-color: #0a192f;
-		padding: 20px 20px 20px 25px;
-		box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.75);
-
-		p {
-			font-size: 1rem;
-			line-height: 1.2;
-			font-family: "Inter", sans-serif;
-			color: variables.$primary-paragraph-color;
-		}
-	}
-
-	.project_stack {
-		& > ul {
-			gap: 4px;
-			display: flex;
-			flex-wrap: wrap;
-			& > li {
-				line-height: 1;
-				padding: 3px 7px;
-				font-size: 1.25rem;
-				border-radius: 3px;
-				height: fit-content;
-				color: variables.$secondary-heading-color;
-				border: 1px solid variables.$secondary-heading-color;
-			}
-		}
-	}
-
-	.project_links {
-		& > ul {
-			gap: 15px;
-			display: flex;
-			li {
-				.icon {
-					height: 25px;
-					width: 25px;
-					fill: variables.$primary-paragraph-color;
-				}
-			}
-		}
-	}
-}
-
-.project_image {
-	top: 50%;
-	right: 0;
-	z-index: 0;
-	width: 50%;
-	position: absolute;
-	border-radius: 6px;
-	aspect-ratio: 16 / 9;
-	background-color: white;
-	transform: translateY(-50%);
-	border: 1px solid variables.$secondary-heading-color;
-
-	.cover {
-		position: absolute;
-		height: 100%;
-		width: 100%;
-	}
-
-	img {
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-		border-radius: 6px;
-		filter: grayscale(20%) contrast(1) brightness(90%);
-	}
-}
-
-@media (max-width: 1100px) {
-	.section {
-		min-height: 0;
-	}
-
-	.projects {
-		width: 85%;
-		min-height: 0;
-		display: flex;
-		flex-direction: column;
-	}
-
-	.projects_list {
-		gap: 25px;
-		& > li {
-			margin: 0;
-			aspect-ratio: 16/9;
-			height: fit-content;
-			align-items: center;
-			justify-content: center;
-			.project_image {
-				width: 100%;
-				height: 100%;
-				.image {
-					filter: brightness(0.5);
-				}
-			}
-			.single_project_body {
-				width: 100%;
-				height: 100%;
-				display: flex;
-				padding: 50px;
-				align-items: center;
-				justify-content: center;
-				background-color: #0a192f9b;
-				.project_title {
-					h3 {
-						font-size: 1.25rem;
-					}
-
-					span {
-						font-size: 0.9rem;
-					}
-				}
-
-				.project_sumary {
-					padding: 0;
-					box-shadow: none;
-					background-color: transparent;
-
-					p {
-						font-size: 0.9rem;
-					}
-				}
-			}
-		}
-	}
-}
-
-@media (max-width: 651px) {
-	.section {
-		min-height: 0;
-	}
-	.projects {
-		width: 90%;
-		min-height: 0;
-		padding-top: 0;
-		padding-bottom: 0;
-		.stack {
-			& > ul {
-				flex-wrap: wrap;
-				& > li {
-					font-size: 1.1rem;
-				}
-			}
-		}
-
-		.projects_list {
-			width: 100%;
-			height: fit-content;
-			min-height: fit-content;
-			justify-content: normal;
-			& > li {
-				margin: 0;
-				min-height: calc(50vh);
-				box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.75);
-			}
-		}
-	}
-
-	.single_project_body {
-		width: 100%;
-		height: 100%;
-		padding: 10px;
 		background-color: #0a192f;
 
 		.project_title {
+			gap: 5px;
+			height: 50px;
+			display: flex;
 			text-align: center;
+			color: #00eeffb5;
+			width: fit-content;
+			position: relative;
+			flex-direction: column;
+			justify-content: center;
+			padding: 5px 0px 5px 0px;
+
 			h3 {
-				font-size: 1.25rem;
+				line-height: 1;
+				font-weight: 500;
+				font-size: 1.75rem;
+				font-family: "JetBrains Mono", monospace;
 			}
 
 			span {
-				font-size: 0.9rem;
+				color: white;
+				line-height: 1;
+				font-weight: 200;
+				font-family: "Fira Code", monospace;
 			}
 		}
 
-		.project_sumary {
-			padding: 0;
-			box-shadow: none;
-			background-color: transparent;
-
+		.project_summary {
+			width: 100%;
 			p {
-				font-size: 0.9rem;
+				font-size: 1rem;
+				line-height: 1.2;
+				font-family: "Inter", sans-serif;
+				color: variables.$primary-paragraph-color;
+			}
+		}
+
+		.project_stack {
+			& > ul {
+				gap: 4px;
+				display: flex;
+				flex-wrap: wrap;
+				& > li {
+					line-height: 1;
+					padding: 3px 7px;
+					font-size: 1.25rem;
+					border-radius: 3px;
+					height: fit-content;
+					color: variables.$secondary-heading-color;
+					border: 1px solid variables.$secondary-heading-color;
+				}
+			}
+		}
+
+		.project_links {
+			& > ul {
+				gap: 15px;
+				display: flex;
+				li {
+					.icon {
+						height: 35px;
+						width: 35px;
+						fill: variables.$primary-paragraph-color;
+					}
+				}
 			}
 		}
 	}
 
 	.project_image {
 		display: none;
+	}
+}
+
+@media (min-width: 760px) {
+	.individual_project {
+		aspect-ratio: 16/9;
+	}
+
+	.project_image {
+		top: 0;
+		right: 0;
+		z-index: -1;
+		height: 100%;
+		display: block;
+		position: absolute;
+		aspect-ratio: 16/9;
+
+		.image {
+			filter: brightness(0.5);
+		}
+	}
+
+	.project_body {
+		background-color: rgba(10, 25, 47, 0.8);
+	}
+}
+
+@media (min-width: 910px) {
+	.section {
+		.projects {
+			.projects_list {
+				.individual_project {
+					display: flex;
+					max-height: 60vh;
+					position: relative;
+					align-items: center;
+					box-shadow: none;
+				}
+			}
+		}
+	}
+
+	.project_image {
+		top: 50%;
+		height: auto;
+		width: 55%;
+		aspect-ratio: 16/9;
+		transform: translateY(-50%);
+		box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.75);
+
+		.image {
+			border-radius: 3px;
+			filter: brightness(0.7);
+		}
+	}
+
+	.project_body {
+		width: 550px;
+		padding: 10px;
+		height: fit-content;
+		align-items: flex-start;
+		background-color: transparent;
+
+		.project_title {
+			text-align: start;
+			padding: 5px 0px 5px 0px;
+		}
+
+		.project_summary {
+			width: 100%;
+			border-radius: 3px;
+			background-color: #0a192f;
+			padding: 20px 20px 20px 25px;
+			box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.75);
+
+			p {
+				font-size: 1rem;
+				line-height: 1.2;
+				font-family: "Inter", sans-serif;
+				color: variables.$primary-paragraph-color;
+			}
+		}
+	}
+}
+
+@media (min-width: 1280px) {
+	.section {
+		.projects {
+			width: 80%;
+		}
 	}
 }

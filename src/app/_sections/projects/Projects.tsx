@@ -7,20 +7,20 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 export default function Projects() {
 	return (
 		<section id="projects" className={s.section}>
+			<div className={s.header}>
+				<h1>Stuff I have Done</h1>
+			</div>
 			<div className={s.projects}>
-				<div>
-					<h1>Stuff I have Done</h1>
-				</div>
 				<ul className={s.projects_list}>
 					{MyProjects.map((project) => {
 						return (
-							<li key={project.title}>
-								<div className={s.single_project_body}>
+							<li className={s.individual_project} key={project.title}>
+								<div className={s.project_body}>
 									<div className={s.project_title}>
 										<span>Featured Project</span>
 										<h3>{project.title}</h3>
 									</div>
-									<div className={s.project_sumary}>
+									<div className={s.project_summary}>
 										<p>{project.description}</p>
 									</div>
 									<div className={s.project_stack}>
