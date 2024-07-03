@@ -2,6 +2,7 @@ import { createContext, ReactNode, SetStateAction, useContext, useEffect, useSta
 import ILocale from "../../scripts/ILocale";
 
 interface IDisplayLanguageContext {
+	SelectedDisplayLanguage: string;
 	DisplayLanguage: ILocale | null;
 	SetDisplayLanguage: React.Dispatch<SetStateAction<ILocale | null>>;
 	ChangeDisplayLanguage: (language: string) => void;
@@ -34,10 +35,10 @@ export default function DisplayLanguageProvider({ children }: { children: ReactN
 
 	useEffect(() => {
 		VerifyLanguageChoice();
-	}, [SelectedDisplayLanguage]);
+	}, [SelectedDisplayLanguage, VerifyLanguageChoice]);
 
 	return (
-		<DisplayLanguageContext.Provider value={{ DisplayLanguage, SetDisplayLanguage, ChangeDisplayLanguage }}>
+		<DisplayLanguageContext.Provider value={{ DisplayLanguage, SelectedDisplayLanguage, SetDisplayLanguage, ChangeDisplayLanguage }}>
 			{children}
 		</DisplayLanguageContext.Provider>
 	);
