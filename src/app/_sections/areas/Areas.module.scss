@@ -1,8 +1,5 @@
 @use "../../variables.scss";
 
-.section {
-}
-
 @media (min-width: 200px) {
 	.section {
 		display: flex;
@@ -24,6 +21,7 @@
 		flex-direction: column;
 		height: calc(100% - 60px);
 		.card {
+			opacity: 0;
 			gap: 13px;
 			height: 33%;
 			display: flex;
@@ -80,11 +78,14 @@
 
 @media (min-width: 1080px) {
 	.section {
+		padding: 50px 0px;
 		height: fit-content;
 		min-height: 0;
 	}
+
 	.section > .body {
 		gap: 2px;
+		margin-top: 30px;
 		width: fit-content;
 	}
 }

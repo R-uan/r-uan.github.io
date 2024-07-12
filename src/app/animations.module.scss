@@ -24,6 +24,11 @@
 	animation: slide-in-right 2s ease forwards;
 }
 
+.slide_in_bottom {
+	opacity: 0;
+	animation: slide-in-bottom 2s ease forwards;
+}
+
 /// Slide in from the top
 @-webkit-keyframes slide-in-top {
 	0% {

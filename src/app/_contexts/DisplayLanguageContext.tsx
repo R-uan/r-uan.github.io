@@ -19,12 +19,13 @@ export default function DisplayLanguageProvider({ children }: { children: ReactN
 
 	async function VerifyLanguageChoice() {
 		const language = localStorage.getItem("language");
-		if (language == "pt") {
-			const pt: ILocale = await locales.pt();
-			SetDisplayLanguage(pt);
-		} else {
+		if (language == "en") {
 			const en: ILocale = await locales.en();
 			SetDisplayLanguage(en);
+		} else {
+			const pt: ILocale = await locales.pt();
+			localStorage.setItem("language", "pt");
+			SetDisplayLanguage(pt);
 		}
 	}
 

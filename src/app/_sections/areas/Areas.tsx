@@ -1,14 +1,23 @@
 import Image from "next/image";
 import s from "./Areas.module.scss";
+import animation from "../../animations.module.scss";
+import { useEffect, useState } from "react";
+import { useWindowScrollContext } from "@/app/_contexts/WindowScrollContext";
 
 export default function Areas() {
+	const [loaded, setLoadStatus] = useState(false);
+	const { scrollPosition } = useWindowScrollContext();
+	useEffect(() => {
+		if (scrollPosition > 1000 && !loaded) setLoadStatus(true);
+	}, [scrollPosition, loaded]);
+
 	return (
 		<section className={s.section}>
 			<div>
 				<h1 className="text-[2rem]">AREAS DE INTERESSE</h1>
 			</div>
 			<div className={s.body}>
-				<div className={s.card}>
+				<div className={`${s.card} ${loaded ? animation.slide_in_bottom : null}`} style={{ animationDelay: "300ms" }}>
 					<div className={s.title}>
 						<h3>Front-end Development</h3>
 					</div>
@@ -22,7 +31,7 @@ export default function Areas() {
 						<Image className={s.mg} alt="devops" fill={true} src={"/react.svg"} />
 					</div>
 				</div>
-				<div className={s.card}>
+				<div className={`${s.card} ${loaded ? animation.slide_in_bottom : null}`} style={{ animationDelay: "400ms" }}>
 					<div className={s.title}>
 						<h3>Back-end Development</h3>
 					</div>
@@ -36,7 +45,7 @@ export default function Areas() {
 						<Image className={s.mg} alt="devops" fill={true} src={"/backend.svg"} />
 					</div> */}
 				</div>
-				<div className={s.card}>
+				<div className={`${s.card} ${loaded ? animation.slide_in_bottom : null}`} style={{ animationDelay: "500ms" }}>
 					<div className={s.title}>
 						<h3>DevOps Engineer</h3>
 					</div>
