@@ -1,126 +1,57 @@
 @use "../../variables.scss";
 
-.contact {
-	width: 100%;
-	display: flex;
-	min-height: 100vh;
-	padding-bottom: 100px;
-	align-items: flex-end;
-	justify-content: center;
-}
-
-.contact_content {
-	width: 70%;
-	display: flex;
-	height: calc(100vh - 80px);
-}
-
-.left_panel {
-	width: 80%;
-	display: flex;
-	align-items: center;
-
-	.left_content {
-		gap: 20px;
-		width: 75%;
-		height: 100%;
-		padding: 50px;
+@media (min-width: 200px) {
+	.section {
 		display: flex;
+		min-height: 50vh;
 		position: relative;
 		align-items: center;
-		flex-direction: column;
 		justify-content: center;
+	}
 
-		.code_block {
+	.contact {
+		width: 95%;
+		height: fit-content;
+	}
+
+	.contact_info {
+		padding: 20px 0px;
+		.contacts {
+			gap: 10px;
 			width: 100%;
-		}
-
-		& > .presentation {
-			width: 100%;
-			height: fit-content;
-
-			& > h3 {
-				color: variables.$secondary-heading-color;
-				font-size: variables.$primary-heading-size;
-			}
-
-			& > p {
-				font-size: 1.5rem;
-				color: variables.$primary-paragraph-color;
-			}
-		}
-
-		.contact_info {
-			width: 100%;
-			position: relative;
-			margin-bottom: 50px;
-
-			.contacts {
-				gap: 15px;
-				display: flex;
-				flex-direction: row;
-				& > li {
-					.icons {
-						width: 30px;
-						height: 30px;
-						fill: variables.$primary-heading-color;
-					}
+			justify-content: center;
+			display: flex;
+			li {
+				.icons {
+					font-size: 2rem;
+					fill: variables.$primary-heading-color;
 				}
 			}
+		}
+	}
 
-			.copy_message {
-				color: #06d6a0;
+	.interest {
+		padding: 5px;
+
+		.disponibility {
+			gap: 10px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			h1 {
+				line-height: 1;
+				font-weight: bold;
+				color: variables.$secondary-heading-color;
+				font-size: 2rem;
+			}
+
+			p {
+				line-height: 1.1;
 				font-size: 1.5rem;
-				position: absolute;
+				text-align: center;
+				color: variables.$primary-paragraph-color;
 			}
-		}
-	}
-}
-
-.big_picture {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: white;
-	height: 100%;
-	width: 50%;
-}
-
-@media (max-width: 630px) {
-	.left_panel {
-		padding-top: 50px;
-		.left_content {
-			padding: 10px;
-			justify-content: normal;
-			.contact_info {
-				margin-bottom: 20px;
-			}
-		}
-	}
-}
-
-@media (max-width: 930px) {
-	.contact {
-		min-height: 50vh;
-		padding-top: 50px;
-	}
-
-	.contact_content {
-		height: fit-content;
-		justify-content: center;
-	}
-	.left_panel {
-		width: 100%;
-	}
-	.big_picture {
-		display: none;
-	}
-}
-
-@media (max-width: 1240px) {
-	.left_panel {
-		.left_content {
-			width: 100%;
 		}
 	}
 }

@@ -3,6 +3,7 @@ import s from "./Header.module.scss";
 import animation from "@/app/animations.module.scss";
 import { useDisplayLanguageContext } from "@/app/_contexts/DisplayLanguageContext";
 import { useAnimationTriggerContext } from "@/app/_contexts/AnimationTriggerContext";
+import { HiOutlineMenuAlt2 } from "react-icons/hi";
 
 export default function Header() {
 	const { DisplayLanguage } = useDisplayLanguageContext();
@@ -12,7 +13,9 @@ export default function Header() {
 	return (
 		<header className={s.header}>
 			<div className={s.mobile_menu_toggle}>
-				<button onClick={OpenSideMenu}>Open</button>
+				<button onClick={OpenSideMenu}>
+					<HiOutlineMenuAlt2 size={30} />
+				</button>
 			</div>
 			<div className={`${s.logo} ${!animationTriggered ? animation.nav_waiting : animation.bounce_in_top}`} style={{ animationDelay: "2s" }}>
 				<span>hello world</span>

@@ -4,7 +4,7 @@ export default function Footer() {
 	return (
 		<footer className={s.footer}>
 			<div>
-				<h3>Built by Ruan Lopes using NextJS (Typescript, React, Tailwind, SCSS)</h3>
+				<h2>Built by Ruan Lopes using NextJS (Typescript, React, Tailwind, SCSS)</h2>
 			</div>
 		</footer>
 	);

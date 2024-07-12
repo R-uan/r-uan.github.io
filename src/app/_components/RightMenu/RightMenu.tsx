@@ -1,11 +1,8 @@
-import s from "./RightMenu.module.scss";
-import animation from "@/app/animations.module.scss";
 import { useAnimationTriggerContext } from "@/app/_contexts/AnimationTriggerContext";
 import { useDisplayLanguageContext } from "@/app/_contexts/DisplayLanguageContext";
-import { FaDiscord, FaGithub, FaLinkedin, FaSkype } from "react-icons/fa6";
-import { SiGmail } from "react-icons/si";
+import animation from "@/app/animations.module.scss";
+import s from "./RightMenu.module.scss";
 
-// This is a temporary name for the component (hopefully I can think of something better)
 export default function ScrollTracker() {
 	const { animationTriggered } = useAnimationTriggerContext();
 	const { ChangeDisplayLanguage, SelectedDisplayLanguage } = useDisplayLanguageContext();

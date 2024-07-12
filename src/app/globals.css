@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Smooch+Sans:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -24,6 +25,10 @@ section {
 	min-height: 100vh;
 	scroll-snap-align: start;
 	scroll-snap-stop: always;
+}
+
+h3 {
+	font-family: "Passion One", sans-serif;
 }
 
 h1 {

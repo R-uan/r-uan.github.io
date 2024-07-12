@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import s from "./AlternativeHeader.module.scss";
 import { useWindowScrollContext } from "@/app/_contexts/WindowScrollContext";
 import { useDisplayLanguageContext } from "@/app/_contexts/DisplayLanguageContext";
+import { HiOutlineMenuAlt2 } from "react-icons/hi";
 
 export default function AlternativeHeader() {
 	const { scrollPosition } = useWindowScrollContext();
@@ -11,7 +12,7 @@ export default function AlternativeHeader() {
 
 	useEffect(() => {
 		if (scrollPosition > 300) {
-			document.getElementById("alternative-header")!.style.height = "80px";
+			document.getElementById("alternative-header")!.style.height = "70px";
 		} else {
 			document.getElementById("alternative-header")!.style.height = "0";
 		}
@@ -20,7 +21,9 @@ export default function AlternativeHeader() {
 	return (
 		<header id="alternative-header" className={s.header}>
 			<div className={s.mobile_menu_toggle}>
-				<button onClick={OpenSideMenu}>Open</button>
+				<button onClick={OpenSideMenu}>
+					<HiOutlineMenuAlt2 />
+				</button>
 			</div>
 			<div>
 				<span>hello world</span>

@@ -6,6 +6,7 @@ import DisplayLanguageProvider from "@/app/_contexts/DisplayLanguageContext";
 import AnimationTriggerProvider from "@/app/_contexts/AnimationTriggerContext";
 import { AboutMe, Contacts, Header, Landing, Loading, MobileMenu, Projects, RightMenu } from "./exports";
 import WindowScrollProvider from "./_contexts/WindowScrollContext";
+import Areas from "./_sections/areas/Areas";
 
 export default function Home() {
 	return (
@@ -20,6 +21,7 @@ export default function Home() {
 						<main>
 							<Landing />
 							<AboutMe />
+							<Areas />
 							<Projects />
 							<Contacts />
 						</main>

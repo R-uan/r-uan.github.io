@@ -16,44 +16,47 @@ export default function Contacts() {
 		}, 3000);
 	};
 	return (
-		<section id="contact" className={s.contact}>
-			<div className={s.contact_content}>
-				<div className={s.left_panel}>
-					<div className={s.left_content}>
-						<div className={s.presentation}>
-							<h3>{DisplayLanguage?.contact.title}</h3>
-							<p>{DisplayLanguage?.contact.value}</p>
-						</div>
-						<div className={s.contact_info}>
-							<ul className={s.contacts}>
-								<li>
-									<a href="https://github.com/R-uan">
-										<FaGithub className={s.icons} />
-									</a>
-								</li>
-								<li>
-									<a href="https://www.linkedin.com/in/rpo-lopes/">
-										<FaLinkedin className={s.icons} />
-									</a>
-								</li>
-								<li>
-									<a href="mailto:rpo.lopes.dev@gmail.com">
-										<SiGmail className={s.icons} />
-									</a>
-								</li>
-								<li>
-									<button onClick={() => CopyToClipBoard("live:5bf285eb75c15b71")}>
-										<FaSkype className={s.icons} />
-									</button>
-								</li>
-								<li>
-									<button onClick={() => CopyToClipBoard("r.uan")}>
-										<FaDiscord className={s.icons} />
-									</button>
-								</li>
-								<li></li>
-							</ul>
-							<span id="copy-message" className={s.copy_message}></span>
+		<section id="contact" className={s.section}>
+			<div className={s.contact}>
+				<div className={s.left_content}>
+					<div className={s.interest}>
+						<div className={s.disponibility}>
+							<h1>Disponibilidade</h1>
+							<p>
+								Atualmente estou totalmente disponivel para me dedicar a qualquer projeto full-time. <br /> Se você acretida que eu
+								serei uma boa adição para sua equipe, você pode me contactar em:
+							</p>
+							<div className={s.contact_info}>
+								<ul className={s.contacts}>
+									<li>
+										<a href="https://github.com/R-uan">
+											<FaGithub className={s.icons} />
+										</a>
+									</li>
+									<li>
+										<a href="https://www.linkedin.com/in/rpo-lopes/">
+											<FaLinkedin className={s.icons} />
+										</a>
+									</li>
+									<li>
+										<a href="mailto:rpo.lopes.dev@gmail.com">
+											<SiGmail className={s.icons} />
+										</a>
+									</li>
+									<li>
+										<button onClick={() => CopyToClipBoard("live:5bf285eb75c15b71")}>
+											<FaSkype className={s.icons} />
+										</button>
+									</li>
+									<li>
+										<button onClick={() => CopyToClipBoard("r.uan")}>
+											<FaDiscord className={s.icons} />
+										</button>
+									</li>
+									<li></li>
+								</ul>
+								<span id="copy-message" className={s.copy_message}></span>
+							</div>
 						</div>
 					</div>
 				</div>
