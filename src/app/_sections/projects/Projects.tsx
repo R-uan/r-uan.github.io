@@ -8,7 +8,7 @@ export default function Projects() {
 	return (
 		<section id="projects" className={s.section}>
 			<div className={s.header}>
-				<h1>Stuff I have Done</h1>
+				<span className="big_text">Stuff I have Done</span>
 			</div>
 			<div className={s.projects}>
 				<ul className={s.projects_list}>

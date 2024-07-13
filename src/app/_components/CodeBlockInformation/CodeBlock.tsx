@@ -21,7 +21,7 @@ export default function CodeBlock() {
 					className={`${s.code} ${!animationTriggered ? animation.text_waiting : animation.text_loaded}`}
 					style={{ animationDelay: "600ms" }}>
 					<span className={s.keyword}>int</span>
-					<span className={s.variable}>{DisplayLanguage?.landing.codeBlock.fields.age}</span>
+					<span className={s.variable}>{DisplayLanguage?.misc.codeBlock.fields.age}</span>
 					<span className="text-white">=</span>
 					<span className="text-[#AFC7A3]">{Age()};</span>
 				</div>
@@ -31,9 +31,9 @@ export default function CodeBlock() {
 					className={`${s.code} ${!animationTriggered ? animation.text_waiting : animation.text_loaded}`}
 					style={{ animationDelay: "700ms" }}>
 					<span className={s.keyword}>string</span>
-					<span className={s.variable}>{DisplayLanguage?.landing.codeBlock.fields.nationality}</span>
+					<span className={s.variable}>{DisplayLanguage?.misc.codeBlock.fields.nationality}</span>
 					<span className="text-white">=</span>
-					<span className={s.string}>&quot;{DisplayLanguage?.landing.codeBlock.values.nationality}&quot;</span>
+					<span className={s.string}>&quot;{DisplayLanguage?.misc.codeBlock.values.nationality}&quot;</span>
 					<span className="text-white">;</span>
 				</div>
 			</div>
@@ -68,12 +68,12 @@ export default function CodeBlock() {
 					className={`${s.code} ${!animationTriggered ? animation.text_waiting : animation.text_loaded}`}
 					style={{ animationDelay: "1000ms" }}>
 					<span className={s.keyword}>string[]</span>
-					<span className={s.variable}>{DisplayLanguage?.landing.codeBlock.fields.nationality}</span>
+					<span className={s.variable}>{DisplayLanguage?.misc.codeBlock.fields.nationality}</span>
 					<span className="text-white">=</span>
 					<span className="text-white">{"{"}</span>
-					<span className={s.string}>&quot;{DisplayLanguage?.landing.codeBlock.values.languages[0]}&quot;</span>
+					<span className={s.string}>&quot;{DisplayLanguage?.misc.codeBlock.values.languages[0]}&quot;</span>
 					<span className="text-white">{", "}</span>
-					<span className={s.string}>&quot;{DisplayLanguage?.landing.codeBlock.values.languages[1]}&quot;</span>
+					<span className={s.string}>&quot;{DisplayLanguage?.misc.codeBlock.values.languages[1]}&quot;</span>
 					<span className="text-white">{"}"}</span>
 				</div>
 			</div>

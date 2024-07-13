@@ -6,6 +6,7 @@ import animation from "@/app/animations.module.scss";
 import { useDisplayLanguageContext } from "@/app/_contexts/DisplayLanguageContext";
 import { useWindowScrollContext } from "@/app/_contexts/WindowScrollContext";
 import { useEffect, useState } from "react";
+
 export default function About() {
 	const [loaded, setLoadStatus] = useState(false);
 	const { scrollPosition } = useWindowScrollContext();
@@ -19,16 +20,16 @@ export default function About() {
 		<section id="about" className={`${s.about} ${!loaded ? null : animation.fade_in_bottom}`}>
 			<div className={s.about_content}>
 				<div className={`${s.about_me}`}>
-					<span className={s.big_text}>{DisplayLanguage?.about.fields.about_me}</span>
+					<span className="big_text">{DisplayLanguage?.titles.about}</span>
 					<div>
-						{DisplayLanguage?.about.values.aboutMe.map((text) => {
+						{DisplayLanguage?.paragraphs.about.map((text) => {
 							return <p key={text.charAt(2) + "text"}>{text}</p>;
 						})}
 					</div>
 				</div>
 				<div className={s.languages}>
 					<div>
-						<span className={s.big_text}>{DisplayLanguage?.about.fields.technologies}</span>
+						<span className="big_text">{DisplayLanguage?.titles.technologies}</span>
 					</div>
 					<div className={s.skills}>
 						{PrimarySkills.map((skill, index) => {

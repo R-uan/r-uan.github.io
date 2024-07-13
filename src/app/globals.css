@@ -37,6 +37,16 @@ h1 {
 	font-style: normal;
 }
 
+.big_text {
+	line-height: 1;
+	font-weight: bold;
+	width: fit-content;
+	position: relative;
+	margin-bottom: 20px;
+	color: #ff003c;
+	font-size: clamp(2rem, 2vw, 2vw);
+}
+
 @layer components {
 	.code {
 		@apply font-jetbrains;

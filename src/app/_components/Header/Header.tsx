@@ -25,27 +25,27 @@ export default function Header() {
 					<li className={!animationTriggered ? animation.nav_waiting : animation.nav_loaded} style={{ animationDelay: "100ms" }}>
 						<a href="#about">
 							<span>01.</span>
-							<span>{DisplayLanguage?.heading.about}</span>
+							<span>{DisplayLanguage?.header.about}</span>
 						</a>
 					</li>
 					<li className={!animationTriggered ? animation.nav_waiting : animation.nav_loaded} style={{ animationDelay: "250ms" }}>
 						<a href="#projects">
 							<span>02.</span>
-							<span>{DisplayLanguage?.heading.experience}</span>
+							<span>{DisplayLanguage?.header.experience}</span>
 						</a>
 					</li>
 					<li className={!animationTriggered ? animation.nav_waiting : animation.nav_loaded} style={{ animationDelay: "400ms" }}>
 						<a href="#contact">
 							<span>03.</span>
-							<span>{DisplayLanguage?.heading.contact}</span>
+							<span>{DisplayLanguage?.header.contact}</span>
 						</a>
 					</li>
 				</ul>
 				<div
 					className={`${s.resume} ${!animationTriggered ? animation.nav_waiting : animation.nav_loaded}`}
 					style={{ animationDelay: "550ms" }}>
-					<Link href={DisplayLanguage?.resume ?? ""} target="_blank" className={`${s.shadow_pop_tr} ${s.link}`}>
-						<span>{DisplayLanguage?.heading.resume}</span>
+					<Link href={DisplayLanguage?.misc.resume ?? ""} target="_blank" className={`${s.shadow_pop_tr} ${s.link}`}>
+						<span>{DisplayLanguage?.header.resume}</span>
 					</Link>
 				</div>
 			</nav>

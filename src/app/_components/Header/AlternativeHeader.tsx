@@ -33,25 +33,25 @@ export default function AlternativeHeader() {
 					<li>
 						<a href="#about">
 							<span>01.</span>
-							<span>{DisplayLanguage?.heading.about}</span>
+							<span>{DisplayLanguage?.header.about}</span>
 						</a>
 					</li>
 					<li>
 						<a href="#projects">
 							<span>02.</span>
-							<span>{DisplayLanguage?.heading.experience}</span>
+							<span>{DisplayLanguage?.header.experience}</span>
 						</a>
 					</li>
 					<li>
 						<a href="#contact">
 							<span>03.</span>
-							<span>{DisplayLanguage?.heading.contact}</span>
+							<span>{DisplayLanguage?.header.contact}</span>
 						</a>
 					</li>
 				</ul>
 				<div className={s.resume}>
-					<Link href={DisplayLanguage?.resume ?? ""} target="_blank" className={`${s.shadow_pop_tr} ${s.link}`}>
-						<span>{DisplayLanguage?.heading.resume}</span>
+					<Link href={DisplayLanguage?.misc.resume ?? ""} target="_blank" className={`${s.shadow_pop_tr} ${s.link}`}>
+						<span>{DisplayLanguage?.header.resume}</span>
 					</Link>
 				</div>
 			</nav>

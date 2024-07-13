@@ -16,11 +16,11 @@ export default function Landing() {
 						<h1>Ruan Lopes</h1>
 					</div>
 					<div className={!animationTriggered ? animation.text_waiting : animation.text_loaded} style={{ animationDelay: "200ms" }}>
-						<h1>{DisplayLanguage?.landing.title}</h1>
+						<h1>{DisplayLanguage?.titles.landing}</h1>
 					</div>
 				</div>
 				<div className={!animationTriggered ? animation.text_waiting : animation.text_loaded} style={{ animationDelay: "300ms" }}>
-					<p>{DisplayLanguage?.landing.introduction}</p>
+					<p>{DisplayLanguage?.paragraphs.landing}</p>
 				</div>
 				<div>
 					<CodeBlock />

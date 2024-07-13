@@ -21,11 +21,8 @@ export default function Contacts() {
 				<div className={s.left_content}>
 					<div className={s.interest}>
 						<div className={s.disponibility}>
-							<h1>Disponibilidade</h1>
-							<p>
-								Atualmente estou totalmente disponivel para me dedicar a qualquer projeto full-time. <br /> Se você acretida que eu
-								serei uma boa adição para sua equipe, você pode me contactar em:
-							</p>
+							<h1>{DisplayLanguage?.titles.contact}</h1>
+							<p>{DisplayLanguage?.paragraphs.contact} </p>
 							<div className={s.contact_info}>
 								<ul className={s.contacts}>
 									<li>

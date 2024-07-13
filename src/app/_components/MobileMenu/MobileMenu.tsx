@@ -28,7 +28,7 @@ export default function MobileMenu() {
 								<span>
 									<IoMdHome />
 								</span>
-								<span>{DisplayLanguage?.heading.home}</span>
+								<span>{DisplayLanguage?.header.home}</span>
 							</a>
 						</li>
 						<li>
@@ -36,7 +36,7 @@ export default function MobileMenu() {
 								<span>
 									<IoPersonSharp />
 								</span>
-								<span>{DisplayLanguage?.heading.about}</span>
+								<span>{DisplayLanguage?.header.about}</span>
 							</a>
 						</li>
 						<li>
@@ -44,7 +44,7 @@ export default function MobileMenu() {
 								<span>
 									<RiGalleryView2 />
 								</span>
-								<span>{DisplayLanguage?.heading.experience}</span>
+								<span>{DisplayLanguage?.header.experience}</span>
 							</a>
 						</li>
 						<li>
@@ -52,7 +52,7 @@ export default function MobileMenu() {
 								<span>
 									<IoIosSend />
 								</span>
-								<span>{DisplayLanguage?.heading.contact}</span>
+								<span>{DisplayLanguage?.header.contact}</span>
 							</a>
 						</li>
 					</ul>
@@ -60,8 +60,8 @@ export default function MobileMenu() {
 				div
 				<div className="w-full flex flex-col gap-[2px] h-fit absolute bottom-0 left-0">
 					<div className={s.resume}>
-						<Link className={s.link} href={DisplayLanguage?.resume ?? ""}>
-							<span>{DisplayLanguage?.heading.resume}</span>
+						<Link className={s.link} href={DisplayLanguage?.misc.resume ?? ""}>
+							<span>{DisplayLanguage?.header.resume}</span>
 						</Link>
 					</div>
 					<div className="gap-[2px] w-full justify-center flex outline outline-1">

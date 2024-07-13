@@ -1,38 +1,51 @@
 {
-	"heading": {
+	"header": {
 		"home": "Home",
 		"about": "About",
-		"experience": "Experience",
 		"contact": "Contact",
-		"resume": "My Resume"
+		"experience": "Experience",
+		"resume": "Resume"
 	},
-	"landing": {
-		"title": "Full-stack web developer.",
-		"introduction": "Aspiring software developer aiming to establish myself in the tech field by creating high-quality applications. Highly motivated to contribute to challenging projects and enhancing my knowledge",
+	"titles": {
+		"about": "About myself",
+		"contact": "Contact",
+		"landing": "Software Developer",
+		"technologies": "Technologies",
+		"areas": {
+			"title": "Areas of Interest",
+			"backend": "Backend dev",
+			"frontend": "Frontend dev",
+			"devops": "DevOps Engineering"
+		}
+	},
+
+	"paragraphs": {
+		"areas": {
+			"backend": "Focus in building APIs with Node.js (Express.js, Nest.js), C# (ASP.NET Core) and PHP (Laravel).",
+			"devops": "Deeper learning into DevOps tools and plataforms such as: Microsoft Azure, Amazon Web Services, Docker, Kubernetes and workflows.",
+			"frontend": "Developing responsive websites using Next.js(React.js, TailwindCSS, SASS, Styled Components) and Blazor (Razor Components, Bootstrap)."
+		},
+		"landing": "Software developer aiming to establish myself in the tech field by creating high-quality applications. Highly motivated to contribute to challenging projects and enhancing my knowledge",
+		"about": [
+			"Hi! My name is Ruan, and I am an aspiring software developer working towards a career in the field. I found myself passionate about technology since 8yo and decided to pursue a career as a software developer, aiming to climb the professional ladder in this exciting field.",
+			"I seek to establish myself in the technology field and utilize my experience in software development to create high-quality applications. I am highly motivated to contribute to challenging projects that add value to my knowledge and help me become a well-rounded and indispensable professional."
+		],
+		"contact": [
+			"If you looked at my resume and though I fitting for your project do not be afraid to hit me up. I am willing to work on any project that will allow me to receive positive experiences in the software development field."
+		]
+	},
+	"misc": {
+		"resume": "/resume-english.pdf",
 		"codeBlock": {
 			"fields": {
-				"age": "age",
-				"nationality": "nationality",
-				"languages": "languages"
+				"age": "Age",
+				"languages": "Languages",
+				"nationality": "Nationality"
 			},
-			"values": { "nationality": "brazilian", "languages": ["portuguese", "english"] }
+			"values": {
+				"languages": ["Portuguese", "English"],
+				"nationality": "Brazilian"
+			}
 		}
-	},
-	"about": {
-		"fields": {
-			"about_me": "About Me",
-			"technologies": "Technologies"
-		},
-		"values": {
-			"aboutMe": [
-				"Hi! My name is Ruan, and I am an aspiring software developer working towards a career in the field. My journey with technology began when I was 8 years old, and since then, it has been an integral part of my daily life, contributing significantly to my personal and educational development. Naturally, I found myself passionate about technology and decided to pursue a career as a software developer, aiming to climb the professional ladder in this exciting field.",
-				"I seek to establish myself in the technology field and utilize my experience in software development to create high-quality applications. I am highly motivated to contribute to challenging projects that add value to my knowledge and help me become a well-rounded and indispensable professional."
-			]
-		}
-	},
-	"resume": "/resume-english",
-	"contact": {
-		"title": "Available For Work",
-		"value": "If you looked at my resume and though I fitting for your project do not be afraid to hit me up. I am willing to work on any project that will allow me to receive positive experiences in the software development field."
 	}
 }
