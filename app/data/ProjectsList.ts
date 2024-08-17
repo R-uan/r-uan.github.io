@@ -1,0 +1,34 @@
+import IProject from "../interfaces/IProject";
+
+export const ProjectList: IProject[] = [
+	{
+		title: "Weather Monitoring",
+		description:
+			"Application that periodically requests weather data from selected cities and stores said data into a SQL database as well as CSV files. This project was made to understand the concept of message brookers and task scheduling.",
+		stack: ["ASP.NET Core", "C#", "RabbitMQ", "Redis", "Postgres", "Golang"],
+		image: "/projects/weatherapi.jpg",
+		url: "https://github.com/R-uan/WeatherMonitoring",
+	},
+	{
+		title: "Art Gallery API",
+		description:
+			"Web API using ASP.NET Core for an digital art gallery. Has authentication with JWT, Caching with Redis and uses PostgreSQL as the database.",
+		stack: ["ASP.NET Core", "C#", "Redis", "JWT", "Postgres"],
+		image: "/projects/artgallery.jpg",
+		url: "https://github.com/R-uan/ArtGalleryWebApi",
+	},
+	{
+		title: "Gopress",
+		description: "HTTP Wrapper for Golang inspired on Expressjs.",
+		stack: ["Golang", "HTTP"],
+		image: "/projects/server.jpg",
+		url: "https://github.com/R-uan/Gopress",
+	},
+	/* {
+		title: "",
+		description: "",
+		stack: [],
+		image: "",
+		url: "",
+	}, */
+];
