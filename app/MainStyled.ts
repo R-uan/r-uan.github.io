@@ -86,7 +86,9 @@ export const MainStyled = styled.main`
 
 		.paladin {
 			display: block;
+			pointer-events: none;
 			& > .pld {
+				pointer-events: none;
 				opacity: 0.05;
 			}
 		}

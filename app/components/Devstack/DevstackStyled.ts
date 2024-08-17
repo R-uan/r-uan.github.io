@@ -17,7 +17,7 @@ export const DevstackStyled = styled.div`
 		}
 
 		.tech {
-			color: rgba(165, 165, 255, 0.65);
+			color: rgba(165, 165, 255, 1);
 		}
 
 		.skill {

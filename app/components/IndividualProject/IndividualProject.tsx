@@ -7,7 +7,7 @@ export default function IndividualProject({ project }: { project: IProject }) {
 	const { title, description, stack, image, url } = project;
 	return (
 		<IndividualProjectStyled>
-			<a href={url} className="external"></a>
+			<a href={url} className="external" aria-label={`${title} repository redirect`}></a>
 			<div className="image">
 				<Image className="image" fill={true} src={image} alt={title} />
 			</div>
