@@ -5,6 +5,7 @@ import s from "./Main.module.scss";
 import About from "./components/About/About";
 import Experience from "./components/Experience/Experience";
 import Works from "./components/Projects/Projects";
+import Link from "next/link";
 
 export default function Home() {
 	return (
@@ -39,9 +40,9 @@ export default function Home() {
 								</a>
 							</li>
 							<li>
-								<a href="/resume.pdf" aria-label="resume redirect" target="_blank">
+								<Link href="/resume.pdf" aria-label="resume redirect" target="_blank">
 									<Image alt="resume" height={30} width={30} src="/social-icons/resume.svg" className={s.icons} />
-								</a>
+								</Link>
 							</li>
 						</ul>
 					</div>
