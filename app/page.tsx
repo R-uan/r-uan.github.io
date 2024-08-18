@@ -20,7 +20,7 @@ export default function Home() {
 						</div>
 					</div>
 					<div className={s.paladin}>
-						<Image width={300} height={300} src="/paladin.png" alt="paladin" className={s.pld} />
+						<Image width={300} height={300} src="/paladin.webp" alt="paladin" className={s.pld} />
 					</div>
 					<div className={s.socials}>
 						<ul>
