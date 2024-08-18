@@ -1,18 +1,18 @@
-import { ExperienceStyled } from "./ExperienceStyled";
 import { ExperienceList } from "@/app/data/ExperienceList";
 import IndividualExperience from "../IndividualExperience/IndividualExperience";
+import s from "./Experience.module.scss";
 
 export default function Experience() {
 	return (
-		<ExperienceStyled>
+		<section className={s.experience}>
 			<div className="head">
 				<h1>EXPERIENCE</h1>
 			</div>
-			<div className="experiences">
+			<div className={s.experiences}>
 				{ExperienceList.map((ex) => {
 					return <IndividualExperience key={ex.position} experience={ex} />;
 				})}
 			</div>
-		</ExperienceStyled>
+		</section>
 	);
 }

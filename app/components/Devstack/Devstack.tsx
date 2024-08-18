@@ -1,25 +1,10 @@
-import Image from "next/image";
-import { useState } from "react";
-import { DevstackStyled } from "./DevstackStyled";
-import { DevstackList } from "@/app/data/DevstackList";
+import s from "./Devstack.module.scss";
 
 export default function Devstack() {
-	const [hover, setHover] = useState<string>("");
-
-	const onHover = (name: string) => setHover(name);
-	const onUnhover = () => setHover("");
-
 	return (
-		<DevstackStyled>
-			<div className="skills">
-				{/* {DevstackList.map((skill, index) => {
-					return (
-						<div key={skill.name} className="skill" onMouseEnter={() => onHover(skill.name)} onMouseLeave={() => onUnhover()}>
-							<Image className="icon" alt={`${skill.name} icon`} src={skill.icon} width={60} height={60} />
-						</div>
-					);
-				})} */}
-				<div className="tech">
+		<section className={s.devstack}>
+			<div className={s.skills}>
+				<div className={s.tech}>
 					<ul>
 						<li>C#</li>
 						<li>Javascript</li>
@@ -28,7 +13,7 @@ export default function Devstack() {
 						<li>CSS</li>
 					</ul>
 				</div>
-				<div className="tech">
+				<div className={s.tech}>
 					<ul>
 						<li>ASP.NET Core</li>
 						<li>NextJS</li>
@@ -36,14 +21,14 @@ export default function Devstack() {
 						<li>TailwindCSS</li>
 					</ul>
 				</div>
-				<div className="tech">
+				<div className={s.tech}>
 					<ul>
 						<li>PostgreSQL</li>
 						<li>MongoDB</li>
 						<li>Redis</li>
 					</ul>
 				</div>
-				<div className="tech">
+				<div className={s.tech}>
 					<ul>
 						<li>Git</li>
 						<li>Github</li>
@@ -51,6 +36,6 @@ export default function Devstack() {
 					</ul>
 				</div>
 			</div>
-		</DevstackStyled>
+		</section>
 	);
 }

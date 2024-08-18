@@ -1,15 +1,13 @@
-"use client";
-
 import Devstack from "../Devstack/Devstack";
-import { AboutStyled } from "./AboutStyled";
+import s from "./About.module.scss";
 
 export default function About() {
 	return (
-		<AboutStyled>
+		<section className={s.about}>
 			<div className="head">
 				<h1>ABOUT</h1>
 			</div>
-			<div className="content">
+			<div className={s.content}>
 				<p>
 					Hello! I am Ruan, a dedicated software developer with a robust background in backend development. My expertise spans a diverse
 					tech stack, including <b>ASP.NET Core</b>, <b>Node.js</b>, and <b>Next.js</b>. Currently, I am focused on creating a standout
@@ -27,6 +25,6 @@ export default function About() {
 				</p>
 			</div>
 			<Devstack />
-		</AboutStyled>
+		</section>
 	);
 }

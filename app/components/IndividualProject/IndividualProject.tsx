@@ -1,25 +1,24 @@
 import IProject from "@/app/interfaces/IProject";
-import { IndividualProjectStyled } from "./IndividualProjectStyled";
 import Image from "next/image";
-import Link from "next/link";
+import s from "./IndProject.module.scss";
 
 export default function IndividualProject({ project }: { project: IProject }) {
 	const { title, description, stack, image, url } = project;
 	return (
-		<IndividualProjectStyled>
-			<a href={url} className="external" aria-label={`${title} repository redirect`}></a>
-			<div className="image">
-				<Image className="image" fill={true} src={image} alt={title} />
+		<section className={s.indproject}>
+			<a href={url} className={s.external} aria-label={`${title} repository redirect`}></a>
+			<div className={s.image}>
+				<Image className={s.image} fill={true} src={image} alt={title} />
 			</div>
-			<div className="summary">
-				<div className="title">
+			<div className={s.summary}>
+				<div className={s.title}>
 					<h1>{title}</h1>
 					<Image src="/external.svg" alt="external" width={20} height={20} />
 				</div>
-				<div className="description">
+				<div className={s.description}>
 					<p>{description}</p>
 				</div>
-				<div className="stack">
+				<div className={s.stack}>
 					<ul>
 						{stack.map((tech) => {
 							return <li key={tech}>{tech}</li>;
@@ -27,6 +26,6 @@ export default function IndividualProject({ project }: { project: IProject }) {
 					</ul>
 				</div>
 			</div>
-		</IndividualProjectStyled>
+		</section>
 	);
 }

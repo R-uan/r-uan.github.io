@@ -1,23 +1,23 @@
 import IExperience from "@/app/interfaces/IExperience";
-import { IndividualExperienceStyled } from "./IndividualExperienceStyled";
+import s from "./IndExperience.module.scss";
 
 export default function IndividualExperience({ experience }: { experience: IExperience }) {
 	const { description, from, location, position, to } = experience;
 	return (
-		<IndividualExperienceStyled>
-			<div className="period">
+		<section className={s.indexperience}>
+			<div className={s.period}>
 				<span>{from}</span>
-				<span className="separator"></span>
+				<span className={s.separadotr}></span>
 				<span>{to}</span>
 			</div>
-			<div className="summary">
-				<div className="title">
+			<div className={s.summary}>
+				<div className={s.title}>
 					<span>
 						{position} · <span>{location}</span>
 					</span>
 				</div>
 				<p>{description}</p>
 			</div>
-		</IndividualExperienceStyled>
+		</section>
 	);
 }
