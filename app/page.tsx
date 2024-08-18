@@ -16,7 +16,7 @@ export default function Home() {
 						<h1>Ruan Lopes</h1>
 						<h2>Software Developer</h2>
 						<div className={s.resume}>
-							<p>Working to build myself up the professional ladder.</p>
+							<p>I like to write letters to machines.</p>
 						</div>
 					</div>
 					<div className={s.paladin}>
