@@ -7,7 +7,7 @@ export default function IndividualExperience({ experience }: { experience: IExpe
 		<section className={s.indexperience}>
 			<div className={s.period}>
 				<span>{from}</span>
-				<span className={s.separadotr}></span>
+				<span>-</span>
 				<span>{to}</span>
 			</div>
 			<div className={s.summary}>

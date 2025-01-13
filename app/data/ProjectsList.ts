@@ -24,6 +24,13 @@ export const ProjectList: IProject[] = [
 		image: "/projects/server.webp",
 		url: "https://github.com/R-uan/Gopress",
 	},
+	{
+		title: "create-gitignore",
+		description: "An interactive CLI tool that creates a .gitignore file ",
+		stack: ["Rust"],
+		image: "",
+		url: "https://github.com/R-uan/create-gitignore",
+	},
 	/* {
 		title: "",
 		description: "",

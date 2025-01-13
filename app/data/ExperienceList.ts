@@ -3,7 +3,7 @@ import IExperience from "../interfaces/IExperience";
 export const ExperienceList: IExperience[] = [
 	{
 		from: "Jul, 2024",
-		to: "PRESENT",
+		to: "Nov, 2024",
 		position: ".NET Developer",
 		location: "Programador.TV",
 		description:
