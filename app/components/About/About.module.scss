@@ -1,3 +1,5 @@
+@use "../../colors" as *;
+
 @media (min-width: 200px) {
 	.about {
 		gap: 30px;
@@ -16,10 +18,10 @@
 		p {
 			font-size: 1.05rem;
 			line-height: 1.55;
-			color: rgba(214, 252, 255, 0.9);
+			color: $paragraph;
 
 			b {
-				color: #e7bf7e;
+				color: $highlight-paragraph;
 			}
 		}
 	}

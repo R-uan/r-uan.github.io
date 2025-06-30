@@ -1,3 +1,5 @@
+@use "../../colors" as *;
+
 @media (min-width: 200px) {
 	.indexperience {
 		gap: 2px;
@@ -30,7 +32,7 @@
 
 		p {
 			font-size: 0.95rem;
-			color: rgba(214, 252, 255, 0.9);
+			color: $paragraph;
 		}
 	}
 
@@ -45,7 +47,7 @@
 		span {
 			font-weight: bold;
 			font-size: 0.85rem;
-			color: #e7bf7e
+			color: $subheader-text;
 		}
 
 		.separator {
@@ -58,7 +60,7 @@
 @media (min-width: 770px) {
 	.indexperience {
 		padding: 20px 30px 20px 20px;
-		border: 1px solid rgba(238, 244, 252, 0.03);
+		border: 2px solid rgba(238, 244, 252, 0.03);
 	}
 
 	.indexperience:hover {

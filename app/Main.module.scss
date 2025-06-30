@@ -1,3 +1,5 @@
+@use "./colors" as *;
+
 @media (min-width: 200px) {
 	.main {
 		gap: 10px;
@@ -6,7 +8,7 @@
 		min-height: 100vh;
 		flex-direction: column;
 		justify-content: center;
-		background-color: #1d1d27;
+		background-color: $background;
 	}
 
 	.left,
@@ -43,19 +45,19 @@
 		.resume {
 			width: 340px;
 			p {
-				color: rgba(214, 252, 255, 0.9);
+				color: $paragraph;
 			}
 		}
 
 		h1 {
-			color: #e7bf7e;
+			color: $header-text;
 			font-size: 2.8rem;
 			line-height: 1.2;
 			font-weight: bold;
 		}
 
 		h2 {
-			color: #fafafa;
+			color: #FAF0E7;
 			line-height: 1;
 			font-size: 1.14rem;
 		}

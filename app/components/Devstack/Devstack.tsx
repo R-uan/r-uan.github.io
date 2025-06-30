@@ -7,10 +7,10 @@ export default function Devstack() {
 				<div className={s.tech}>
 					<ul>
 						<li>C#</li>
+						<li>Rust</li>
+						<li>PHP</li>
 						<li>Javascript</li>
 						<li>Typescript</li>
-						<li>HTML</li>
-						<li>CSS</li>
 					</ul>
 				</div>
 				<div className={s.tech}>
@@ -23,16 +23,17 @@ export default function Devstack() {
 				</div>
 				<div className={s.tech}>
 					<ul>
-						<li>PostgreSQL</li>
-						<li>MongoDB</li>
-						<li>Redis</li>
+						<li>Git</li>
+						<li>Github</li>
+						<li>gRPC</li>
+						<li>RabbitMQ</li>
 					</ul>
 				</div>
 				<div className={s.tech}>
 					<ul>
-						<li>Git</li>
-						<li>Github</li>
-						<li>NodeJS</li>
+						<li>PostgreSQL</li>
+						<li>MongoDB</li>
+						<li>Redis</li>
 					</ul>
 				</div>
 			</div>

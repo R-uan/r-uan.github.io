@@ -21,7 +21,7 @@
 }
 
 body {
-	background-color: #fffff2;
+	background-color: #0F011A;
 }
 
 @layer utilities {
@@ -32,7 +32,7 @@ body {
 
 .head {
 	& > h1 {
-		color: #00f0ff;
+		color: #FAF0E7;
 		font-size: 1rem;
 		font-weight: bold;
 	}

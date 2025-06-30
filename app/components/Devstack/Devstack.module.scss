@@ -1,3 +1,5 @@
+@use "../../colors" as *;
+
 @media (min-width: 200px) {
 	.devstack {
 		gap: 10px;
@@ -16,7 +18,7 @@
 	}
 
 	.tech {
-		color: #e7bf7e;
+		color: $highlight-paragraph;
 	}
 
 	.skill {

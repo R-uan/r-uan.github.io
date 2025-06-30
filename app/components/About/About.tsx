@@ -11,7 +11,7 @@ export default function About() {
 				<p>
 					Hello! I am Ruan, a dedicated software developer with a robust background in backend development. My expertise spans a diverse
 					tech stack, including <b>ASP.NET Core</b>, <b>Node.js</b>, and <b>Next.js</b>. Currently, I am focused on creating a standout
-					personal portfolio website while diving into new technologies like <b>Golang</b> and <b>C++</b>
+					personal portfolio website while diving into new technologies like <b>Lua</b> and <b>C++</b>
 				</p>
 				<p>
 					My experience, though heavily rooted in web development, fuels my eagerness to branch into other areas of software development.

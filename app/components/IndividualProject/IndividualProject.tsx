@@ -8,7 +8,7 @@ export default function IndividualProject({ project }: { project: IProject }) {
 		<section className={s.indproject}>
 			<a href={url} className={s.external} aria-label={`${title} repository redirect`}></a>
 			<div className={s.image}>
-				<Image className={s.image} fill={true} src={image} alt={title} />
+				<Image className={s.image} fill={true} src={image ?? "/purple.webp"} alt={title} />
 			</div>
 			<div className={s.summary}>
 				<div className={s.title}>

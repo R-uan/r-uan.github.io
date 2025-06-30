@@ -1,3 +1,5 @@
+@use "../../colors" as *;
+
 @media (min-width: 200px) {
 	.indproject {
 		gap: 10px;
@@ -8,6 +10,7 @@
 		flex-direction: column;
 		justify-content: center;
 		transition: all ease-in-out 0.15s;
+		border: 2px solid rgba(238, 244, 252, 0.03);
 	}
 
 	.external {
@@ -63,8 +66,8 @@
 
 	.description {
 		p {
+			color: $paragraph;
 			font-size: 0.95rem;
-			color: rgba(214, 252, 255, 0.9);
 		}
 	}
 
@@ -76,13 +79,14 @@
 			flex-wrap: wrap;
 
 			li {
-				color: black;
-				font-weight: 600;
+				font-weight: 500;
+				line-height: 1.5;
 				font-size: 0.9rem;
-				padding: 3px 10px;
 				border-radius: 60px;
-				background-color: #e7bf7e;
-				border: 1px solid #e7bf7e;
+				color: #000000ff;
+				padding: 3px 10px 1px 10px;
+				background-color: $header-text;
+				border: 1px solid $header-text;
 			}
 		}
 	}
