@@ -1,16 +1,22 @@
-@media (min-width: 200px) {
-	.experience {
-		gap: 15px;
-		width: 100%;
-		display: flex;
-		height: fit-content;
-		align-items: center;
-		flex-direction: column;
-	}
+@use "../../colors" as *;
 
-	.experiences {
-		display: flex;
-		align-items: center;
-		flex-direction: column;
-	}
+@media (min-width: 200px) {
+    .experience {
+        gap: 15px;
+        width: 100%;
+        display: flex;
+        height: fit-content;
+        align-items: center;
+        flex-direction: column;
+
+        h1 {
+            color: $header-text;
+        }
+    }
+
+    .experiences {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
 }

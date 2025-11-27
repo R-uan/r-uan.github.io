@@ -1,76 +1,69 @@
 @use "../../colors" as *;
 
 @media (min-width: 200px) {
-	.indexperience {
-		gap: 2px;
-		width: 100%;
-		display: flex;
-		border-radius: 4px;
-		flex-direction: column;
+    .indexperience {
+        gap: 2px;
+        width: 100%;
+        display: flex;
+        border-radius: 4px;
+        flex-direction: column;
 
-		span {
-			color: #ffe3fd;
-		}
-	}
+        span {
+            color: $header-text;
+        }
+    }
 
-	.summary {
-		gap: 3px;
-		flex: 1 1 0%;
-		display: flex;
-		flex-direction: column;
+    .summary {
+        gap: 3px;
+        flex: 1 1 0%;
+        display: flex;
+        flex-direction: column;
 
-		& > .title {
-			gap: 7px;
-			display: flex;
+        & > .title {
+            gap: 7px;
+            display: flex;
 
-			span {
-				color: white;
-				font-weight: bold;
-				font-size: 1.14rem;
-			}
-		}
+            span {
+                color: $header-text;
+                font-weight: bold;
+                font-size: 1.14rem;
+            }
+        }
 
-		p {
-			font-size: 0.95rem;
-			color: $paragraph;
-		}
-	}
+        p {
+            font-size: 0.95rem;
+            color: $paragraph;
+        }
+    }
 
-	.period {
-		gap: 7px;
-		padding: 5px 0px;
-		display: flex;
-		width: fit-content;
-		height: fit-content;
-		align-items: center;
+    .period {
+        gap: 7px;
+        padding: 5px 0px;
+        display: flex;
+        width: fit-content;
+        height: fit-content;
+        align-items: center;
 
-		span {
-			font-weight: bold;
-			font-size: 0.85rem;
-			color: $subheader-text;
-		}
+        span {
+            font-weight: bold;
+            font-size: 0.85rem;
+            color: $subheader-text;
+        }
 
-		.separator {
-			width: 20px;
-			border-bottom: 1px solid #ffe3fd;
-		}
-	}
+        .separator {
+            width: 20px;
+            border-bottom: 1px solid #ffe3fd;
+        }
+    }
 }
 
 @media (min-width: 770px) {
-	.indexperience {
-		padding: 20px 30px 20px 20px;
-		border: 2px solid rgba(238, 244, 252, 0.03);
-	}
+    .indexperience {
+        padding: 20px 30px 20px 20px;
+        border: 2px solid rgba(238, 244, 252, 0.03);
+    }
 
-	.indexperience:hover {
-		background-color: rgba(238, 244, 252, 0.03);
-		.summary {
-			& > .title {
-				span {
-					color: rgb(129, 166, 255);
-				}
-			}
-		}
-	}
+    .indexperience:hover {
+        background-color: rgba(238, 244, 252, 0.03);
+    }
 }

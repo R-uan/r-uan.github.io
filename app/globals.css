@@ -3,43 +3,69 @@
 @tailwind components;
 @tailwind utilities;
 :root {
-	--foreground-rgb: 0, 0, 0;
-	--background-start-rgb: 214, 219, 220;
-	--background-end-rgb: 255, 255, 255;
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 214, 219, 220;
+    --background-end-rgb: 255, 255, 255;
 }
 
 @media (prefers-color-scheme: dark) {
-	:root {
-		--foreground-rgb: 255, 255, 255;
-		--background-start-rgb: 0, 0, 0;
-		--background-end-rgb: 0, 0, 0;
-	}
+    :root {
+        --foreground-rgb: 255, 255, 255;
+        --background-start-rgb: 0, 0, 0;
+        --background-end-rgb: 0, 0, 0;
+    }
 }
 
 * {
-	font-family: "DM Sans", sans-serif;
+    font-family: "DM Sans", sans-serif;
+}
+
+.tip {
+    position: relative;
+    cursor: pointer;
+}
+
+.tip::after {
+    content: attr(data-tip);
+    position: absolute;
+    left: 50%;
+    bottom: 125%; /* lift it above */
+    transform: translateX(-50%);
+    background: #b7a1d3;
+    color: #17131a;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+}
+
+.tip:hover::after {
+    opacity: 1;
 }
 
 body {
-	background-color: #0F011A;
+    background-color: #0f011a;
 }
 
 @layer utilities {
-	.text-balance {
-		text-wrap: balance;
-	}
+    .text-balance {
+        text-wrap: balance;
+    }
 }
 
 .head {
-	& > h1 {
-		color: #FAF0E7;
-		font-size: 1rem;
-		font-weight: bold;
-	}
+    & > h1 {
+        color: #faf0e7;
+        font-size: 1rem;
+        font-weight: bold;
+    }
 }
 
 @media (min-width: 950px) {
-	.head {
-		display: none;
-	}
+    .head {
+        display: none;
+    }
 }

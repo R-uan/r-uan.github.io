@@ -1,28 +1,32 @@
 @use "../../colors" as *;
 
 @media (min-width: 200px) {
-	.about {
-		gap: 30px;
-		display: flex;
-		align-items: center;
-		flex-direction: column;
-	}
+    .about {
+        gap: 30px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
 
-	.content {
-		gap: 15px;
-		width: 100%;
-		display: flex;
-		height: fit-content;
-		flex-direction: column;
+        h1 {
+            color: $header-text;
+        }
+    }
 
-		p {
-			font-size: 1.05rem;
-			line-height: 1.55;
-			color: $paragraph;
+    .content {
+        gap: 15px;
+        width: 100%;
+        display: flex;
+        height: fit-content;
+        flex-direction: column;
 
-			b {
-				color: $highlight-paragraph;
-			}
-		}
-	}
+        p {
+            font-size: 1.05rem;
+            line-height: 1.55;
+            color: $paragraph;
+
+            b {
+                color: $highlight-paragraph;
+            }
+        }
+    }
 }

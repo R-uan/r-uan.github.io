@@ -1,119 +1,147 @@
 @use "./colors" as *;
 
 @media (min-width: 200px) {
-	.main {
-		gap: 10px;
-		display: flex;
-		padding: 3% 10px;
-		min-height: 100vh;
-		flex-direction: column;
-		justify-content: center;
-		background-color: $background;
-	}
+    .main {
+        gap: 10px;
+        display: flex;
+        padding: 3% 10px;
+        min-height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        background-color: $background;
+    }
 
-	.left,
-	.right {
-		width: 100%;
-		display: flex;
-		padding: 7% 5px 7% 5px;
-		position: relative;
-		height: fit-content;
-		flex-direction: column;
-	}
+    .lang {
+        gap: 3px;
+        top: 20px;
+        display: flex;
+        position: absolute;
+        height: fit-content;
 
-	.paladin {
-		display: none;
-	}
+        & > button {
+            width: 35px;
+            font-weight: bold;
+            border-radius: 5px;
+            color: $subheader-text;
+        }
 
-	.right {
-		gap: 70px;
-		align-items: center;
-	}
+        .lang_active {
+            background-color: $subheader-text;
+            color: $background;
+        }
+    }
 
-	.left {
-		gap: 25px;
-		position: relative;
-		height: fit-content;
-		justify-content: space-between;
+    .left,
+    .right {
+        width: 100%;
+        display: flex;
+        padding: 7% 5px 7% 5px;
+        position: relative;
+        height: fit-content;
+        flex-direction: column;
+    }
 
-		.heading {
-			gap: 10px;
-			display: flex;
-			flex-direction: column;
-		}
+    .paladin {
+        display: none;
+    }
 
-		.resume {
-			width: 340px;
-			p {
-				color: $paragraph;
-			}
-		}
+    .right {
+        gap: 70px;
+        align-items: center;
+    }
 
-		h1 {
-			color: $header-text;
-			font-size: 2.8rem;
-			line-height: 1.2;
-			font-weight: bold;
-		}
+    .left {
+        gap: 25px;
+        position: relative;
+        height: fit-content;
+        justify-content: space-between;
 
-		h2 {
-			color: #FAF0E7;
-			line-height: 1;
-			font-size: 1.14rem;
-		}
+        .heading {
+            gap: 10px;
+            display: flex;
+            flex-direction: column;
+        }
 
-		.socials {
-			ul {
-				gap: 10px;
-				display: flex;
-			}
+        .resume {
+            width: 340px;
+            p {
+                color: $paragraph;
+            }
+        }
 
-			.icons {
-				width: 25px;
-				height: 25px;
-			}
-		}
-	}
+        h1 {
+            color: $header-text;
+            font-size: 2.8rem;
+            line-height: 1.2;
+            font-weight: bold;
+        }
+
+        h2 {
+            color: #faf0e7;
+            line-height: 1;
+            font-size: 1.14rem;
+        }
+
+        .socials {
+            ul {
+                gap: 10px;
+                display: flex;
+            }
+
+            .icons {
+                width: 25px;
+                height: 25px;
+            }
+        }
+    }
 }
 
 @media (min-width: 950px) {
-	.main {
-		padding-top: 0;
-		padding-bottom: 0;
-		flex-direction: row;
-	}
+    .lang {
+        top: 20px;
+    }
 
-	.paladin {
-		display: block;
-		pointer-events: none;
-		& > .pld {
-			pointer-events: none;
-			opacity: 0.05;
-		}
-	}
+    .main {
+        padding-top: 0;
+        padding-bottom: 0;
+        flex-direction: row;
+    }
 
-	.left,
-	.right {
-		min-height: 100vh;
-	}
+    .paladin {
+        display: block;
+        pointer-events: none;
+        & > .pld {
+            pointer-events: none;
+            opacity: 0.05;
+        }
+    }
 
-	.left {
-		top: 0;
-		width: 35%;
-		position: sticky;
-	}
+    .left,
+    .right {
+        min-height: 100vh;
+    }
 
-	.right {
-		width: 65%;
-	}
+    .left {
+        top: 0;
+        width: 35%;
+        position: sticky;
+    }
+
+    .right {
+        width: 65%;
+    }
 }
 
 @media (min-width: 1200px) {
-	.left {
-		width: 30%;
-	}
+    .lang {
+        top: 60px;
+    }
 
-	.right {
-		width: 45%;
-	}
+    .left {
+        width: 30%;
+    }
+
+    .right {
+        width: 45%;
+    }
 }
