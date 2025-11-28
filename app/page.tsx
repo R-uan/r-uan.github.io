@@ -99,7 +99,7 @@ export default function Home() {
                 </li>
                 <li className="tip" data-tip="My Resume">
                   <Link
-                    href="/resume.pdf"
+                    href={ctx.isPortuguese ? "/curriculo.pdf" : "/resume.pdf"}
                     aria-label="resume redirect"
                     target="_blank"
                   >
