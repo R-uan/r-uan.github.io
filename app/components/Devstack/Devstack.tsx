@@ -9,14 +9,14 @@ export default function Devstack() {
             <li>C#</li>
             <li>C++</li>
             <li>Rust</li>
-            <li>Java</li>
+            <li>Python</li>
             <li>TypeScript</li>
           </ul>
         </div>
         <div className={s.tech}>
           <ul>
             <li>ASP.NET Core</li>
-            <li>Spring Boot</li>
+            <li>Django</li>
             <li>NextJS</li>
             <li>ReactJS</li>
             <li>Tailwind</li>
